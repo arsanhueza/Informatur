@@ -8,12 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		C341B0941A71BB2100F9F650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0931A71BB2100F9F650 /* AppDelegate.swift */; };
-		C341B0971A71BB2100F9F650 /* Informatur2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C341B0951A71BB2100F9F650 /* Informatur2.xcdatamodeld */; };
-		C341B0991A71BB2100F9F650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0981A71BB2100F9F650 /* ViewController.swift */; };
 		C341B09C1A71BB2100F9F650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C341B09A1A71BB2100F9F650 /* Main.storyboard */; };
 		C341B09E1A71BB2100F9F650 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C341B09D1A71BB2100F9F650 /* Images.xcassets */; };
-		C341B0A11A71BB2100F9F650 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C341B09F1A71BB2100F9F650 /* LaunchScreen.xib */; };
 		C341B0AD1A71BB2100F9F650 /* Informatur2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0AC1A71BB2100F9F650 /* Informatur2Tests.swift */; };
+		C341B0BE1A71BB5700F9F650 /* AtractivosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0B71A71BB5700F9F650 /* AtractivosVC.swift */; };
+		C341B0BF1A71BB5700F9F650 /* DetalleAtractivos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0B81A71BB5700F9F650 /* DetalleAtractivos.swift */; };
+		C341B0C01A71BB5700F9F650 /* DetalleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0B91A71BB5700F9F650 /* DetalleInfo.swift */; };
+		C341B0C11A71BB5700F9F650 /* DetalleServicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */; };
+		C341B0C21A71BB5700F9F650 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BB1A71BB5700F9F650 /* Home.swift */; };
+		C341B0C31A71BB5700F9F650 /* Mapas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BC1A71BB5700F9F650 /* Mapas.swift */; };
+		C341B0C41A71BB5700F9F650 /* Servicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BD1A71BB5700F9F650 /* Servicios.swift */; };
+		C341B1791A71C75C00F9F650 /* Informatur2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C341B1781A71C75C00F9F650 /* Informatur2.sqlite */; };
+		C392D4291A721E30007AA402 /* Atractivos.m in Sources */ = {isa = PBXBuildFile; fileRef = C392D41E1A721E30007AA402 /* Atractivos.m */; };
+		C392D42A1A721E30007AA402 /* Bienvenida.m in Sources */ = {isa = PBXBuildFile; fileRef = C392D4201A721E30007AA402 /* Bienvenida.m */; };
+		C392D42B1A721E30007AA402 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = C392D4221A721E30007AA402 /* Info.m */; };
+		C392D42C1A721E30007AA402 /* Informatur2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C392D4231A721E30007AA402 /* Informatur2.xcdatamodeld */; };
+		C392D42D1A721E30007AA402 /* Mapas.m in Sources */ = {isa = PBXBuildFile; fileRef = C392D4261A721E30007AA402 /* Mapas.m */; };
+		C392D42E1A721E30007AA402 /* Servicios.m in Sources */ = {isa = PBXBuildFile; fileRef = C392D4281A721E30007AA402 /* Servicios.m */; };
+		C392D4651A722D84007AA402 /* ancud.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4311A722D84007AA402 /* ancud.jpg */; };
+		C392D4661A722D84007AA402 /* atractivos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4321A722D84007AA402 /* atractivos.jpg */; };
+		C392D4671A722D84007AA402 /* cabalgatas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4331A722D84007AA402 /* cabalgatas.jpg */; };
+		C392D4681A722D84007AA402 /* canopy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4341A722D84007AA402 /* canopy.jpg */; };
+		C392D4691A722D84007AA402 /* castro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4351A722D84007AA402 /* castro.jpg */; };
+		C392D46A1A722D84007AA402 /* centroCulturalEstacion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4361A722D84007AA402 /* centroCulturalEstacion.jpg */; };
+		C392D46B1A722D84007AA402 /* cerroCalvario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4371A722D84007AA402 /* cerroCalvario.jpg */; };
+		C392D46C1A722D84007AA402 /* cerroPhillippi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4381A722D84007AA402 /* cerroPhillippi.jpg */; };
+		C392D46D1A722D84007AA402 /* ensenada.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4391A722D84007AA402 /* ensenada.jpg */; };
+		C392D46E1A722D84007AA402 /* feriaArtesanal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D43A1A722D84007AA402 /* feriaArtesanal.jpg */; };
+		C392D46F1A722D84007AA402 /* frutillar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D43B1A722D84007AA402 /* frutillar.jpg */; };
+		C392D4701A722D84007AA402 /* grutaDeLourdes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D43C1A722D84007AA402 /* grutaDeLourdes.jpg */; };
+		C392D4711A722D84007AA402 /* iglesiaSagradoCorazon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D43D1A722D84007AA402 /* iglesiaSagradoCorazon.jpg */; };
+		C392D4721A722D84007AA402 /* kayak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D43E1A722D84007AA402 /* kayak.jpg */; };
+		C392D4731A722D84007AA402 /* lagoLLanquihue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D43F1A722D84007AA402 /* lagoLLanquihue.jpg */; };
+		C392D4741A722D84007AA402 /* lagoTodosLosSantos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4401A722D84007AA402 /* lagoTodosLosSantos.jpg */; };
+		C392D4751A722D84007AA402 /* lagunaVerde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4411A722D84007AA402 /* lagunaVerde.jpg */; };
+		C392D4761A722D84007AA402 /* laPoza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4421A722D84007AA402 /* laPoza.jpg */; };
+		C392D4771A722D84007AA402 /* museoAntonioFelmer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4431A722D84007AA402 /* museoAntonioFelmer.jpg */; };
+		C392D4781A722D84007AA402 /* navegacionLacustre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4441A722D84007AA402 /* navegacionLacustre.jpg */; };
+		C392D4791A722D84007AA402 /* parqueNacionalVicente.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4451A722D84007AA402 /* parqueNacionalVicente.jpg */; };
+		C392D47A1A722D84007AA402 /* pescaDeportiva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4461A722D84007AA402 /* pescaDeportiva.jpg */; };
+		C392D47B1A722D84007AA402 /* peulla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4471A722D84007AA402 /* peulla.jpg */; };
+		C392D47C1A722D84007AA402 /* rafting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4481A722D84007AA402 /* rafting.jpg */; };
+		C392D47D1A722D84007AA402 /* ralun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4491A722D84007AA402 /* ralun.jpg */; };
+		C392D47E1A722D84007AA402 /* rioPetrohue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D44A1A722D84007AA402 /* rioPetrohue.jpg */; };
+		C392D47F1A722D84007AA402 /* saltosDelPetrohue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D44B1A722D84007AA402 /* saltosDelPetrohue.jpg */; };
+		C392D4801A722D84007AA402 /* ski.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D44C1A722D84007AA402 /* ski.jpg */; };
+		C392D4811A722D84007AA402 /* termas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D44D1A722D84007AA402 /* termas.jpg */; };
+		C392D4821A722D84007AA402 /* volcanOsorno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D44E1A722D84007AA402 /* volcanOsorno.jpg */; };
+		C392D4831A722D84007AA402 /* bienvenida.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4501A722D84007AA402 /* bienvenida.jpg */; };
+		C392D4841A722D84007AA402 /* historia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4511A722D84007AA402 /* historia.jpg */; };
+		C392D4851A722D84007AA402 /* pto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4521A722D84007AA402 /* pto.jpg */; };
+		C392D4861A722D84007AA402 /* comida@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D4551A722D84007AA402 /* comida@2x.png */; };
+		C392D4871A722D84007AA402 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D4561A722D84007AA402 /* home@2x.png */; };
+		C392D4881A722D84007AA402 /* hostal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D4571A722D84007AA402 /* hostal@2x.png */; };
+		C392D4891A722D84007AA402 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D4581A722D84007AA402 /* map@2x.png */; };
+		C392D48A1A722D84007AA402 /* otros@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D4591A722D84007AA402 /* otros@2x.png */; };
+		C392D48B1A722D84007AA402 /* survey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D45A1A722D84007AA402 /* survey@2x.png */; };
+		C392D48C1A722D84007AA402 /* tranking@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D45B1A722D84007AA402 /* tranking@2x.png */; };
+		C392D48D1A722D84007AA402 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D45D1A722D84007AA402 /* Default-568h@2x.png */; };
+		C392D48E1A722D84007AA402 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D45E1A722D84007AA402 /* Default-667h@2x.png */; };
+		C392D48F1A722D84007AA402 /* Default-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D45F1A722D84007AA402 /* Default-Portrait-736h@3x.png */; };
+		C392D4901A722D84007AA402 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D4601A722D84007AA402 /* Default.png */; };
+		C392D4911A722D84007AA402 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D4611A722D84007AA402 /* Default@2x.png */; };
+		C392D4921A722D84007AA402 /* cabanasPto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4631A722D84007AA402 /* cabanasPto.jpg */; };
+		C392D4931A722D84007AA402 /* opapa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4641A722D84007AA402 /* opapa.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +88,78 @@
 		C341B08E1A71BB2100F9F650 /* Informatur2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Informatur2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C341B0921A71BB2100F9F650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C341B0931A71BB2100F9F650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C341B0961A71BB2100F9F650 /* Informatur2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Informatur2.xcdatamodel; sourceTree = "<group>"; };
-		C341B0981A71BB2100F9F650 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C341B09B1A71BB2100F9F650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C341B09D1A71BB2100F9F650 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C341B0A01A71BB2100F9F650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C341B0A61A71BB2100F9F650 /* Informatur2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Informatur2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C341B0AB1A71BB2100F9F650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C341B0AC1A71BB2100F9F650 /* Informatur2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informatur2Tests.swift; sourceTree = "<group>"; };
+		C341B0B71A71BB5700F9F650 /* AtractivosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtractivosVC.swift; sourceTree = "<group>"; };
+		C341B0B81A71BB5700F9F650 /* DetalleAtractivos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleAtractivos.swift; sourceTree = "<group>"; };
+		C341B0B91A71BB5700F9F650 /* DetalleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleInfo.swift; sourceTree = "<group>"; };
+		C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicios.swift; sourceTree = "<group>"; };
+		C341B0BB1A71BB5700F9F650 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C341B0BC1A71BB5700F9F650 /* Mapas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapas.swift; sourceTree = "<group>"; };
+		C341B0BD1A71BB5700F9F650 /* Servicios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servicios.swift; sourceTree = "<group>"; };
+		C341B1681A71BF7200F9F650 /* Informatur2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Informatur2-Bridging-Header.h"; sourceTree = "<group>"; };
+		C341B1781A71C75C00F9F650 /* Informatur2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Informatur2.sqlite; sourceTree = SOURCE_ROOT; };
+		C392D41D1A721E30007AA402 /* Atractivos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atractivos.h; sourceTree = "<group>"; };
+		C392D41E1A721E30007AA402 /* Atractivos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atractivos.m; sourceTree = "<group>"; };
+		C392D41F1A721E30007AA402 /* Bienvenida.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bienvenida.h; sourceTree = "<group>"; };
+		C392D4201A721E30007AA402 /* Bienvenida.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bienvenida.m; sourceTree = "<group>"; };
+		C392D4211A721E30007AA402 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		C392D4221A721E30007AA402 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		C392D4241A721E30007AA402 /* Informatur2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Informatur2.xcdatamodel; sourceTree = "<group>"; };
+		C392D4251A721E30007AA402 /* Mapas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapas.h; sourceTree = "<group>"; };
+		C392D4261A721E30007AA402 /* Mapas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapas.m; sourceTree = "<group>"; };
+		C392D4271A721E30007AA402 /* Servicios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Servicios.h; sourceTree = "<group>"; };
+		C392D4281A721E30007AA402 /* Servicios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Servicios.m; sourceTree = "<group>"; };
+		C392D4311A722D84007AA402 /* ancud.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ancud.jpg; sourceTree = "<group>"; };
+		C392D4321A722D84007AA402 /* atractivos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atractivos.jpg; sourceTree = "<group>"; };
+		C392D4331A722D84007AA402 /* cabalgatas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabalgatas.jpg; sourceTree = "<group>"; };
+		C392D4341A722D84007AA402 /* canopy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = canopy.jpg; sourceTree = "<group>"; };
+		C392D4351A722D84007AA402 /* castro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = castro.jpg; sourceTree = "<group>"; };
+		C392D4361A722D84007AA402 /* centroCulturalEstacion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = centroCulturalEstacion.jpg; sourceTree = "<group>"; };
+		C392D4371A722D84007AA402 /* cerroCalvario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cerroCalvario.jpg; sourceTree = "<group>"; };
+		C392D4381A722D84007AA402 /* cerroPhillippi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cerroPhillippi.jpg; sourceTree = "<group>"; };
+		C392D4391A722D84007AA402 /* ensenada.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ensenada.jpg; sourceTree = "<group>"; };
+		C392D43A1A722D84007AA402 /* feriaArtesanal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feriaArtesanal.jpg; sourceTree = "<group>"; };
+		C392D43B1A722D84007AA402 /* frutillar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frutillar.jpg; sourceTree = "<group>"; };
+		C392D43C1A722D84007AA402 /* grutaDeLourdes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grutaDeLourdes.jpg; sourceTree = "<group>"; };
+		C392D43D1A722D84007AA402 /* iglesiaSagradoCorazon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iglesiaSagradoCorazon.jpg; sourceTree = "<group>"; };
+		C392D43E1A722D84007AA402 /* kayak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kayak.jpg; sourceTree = "<group>"; };
+		C392D43F1A722D84007AA402 /* lagoLLanquihue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lagoLLanquihue.jpg; sourceTree = "<group>"; };
+		C392D4401A722D84007AA402 /* lagoTodosLosSantos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lagoTodosLosSantos.jpg; sourceTree = "<group>"; };
+		C392D4411A722D84007AA402 /* lagunaVerde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lagunaVerde.jpg; sourceTree = "<group>"; };
+		C392D4421A722D84007AA402 /* laPoza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laPoza.jpg; sourceTree = "<group>"; };
+		C392D4431A722D84007AA402 /* museoAntonioFelmer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museoAntonioFelmer.jpg; sourceTree = "<group>"; };
+		C392D4441A722D84007AA402 /* navegacionLacustre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navegacionLacustre.jpg; sourceTree = "<group>"; };
+		C392D4451A722D84007AA402 /* parqueNacionalVicente.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parqueNacionalVicente.jpg; sourceTree = "<group>"; };
+		C392D4461A722D84007AA402 /* pescaDeportiva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pescaDeportiva.jpg; sourceTree = "<group>"; };
+		C392D4471A722D84007AA402 /* peulla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peulla.jpg; sourceTree = "<group>"; };
+		C392D4481A722D84007AA402 /* rafting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rafting.jpg; sourceTree = "<group>"; };
+		C392D4491A722D84007AA402 /* ralun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ralun.jpg; sourceTree = "<group>"; };
+		C392D44A1A722D84007AA402 /* rioPetrohue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rioPetrohue.jpg; sourceTree = "<group>"; };
+		C392D44B1A722D84007AA402 /* saltosDelPetrohue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saltosDelPetrohue.jpg; sourceTree = "<group>"; };
+		C392D44C1A722D84007AA402 /* ski.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ski.jpg; sourceTree = "<group>"; };
+		C392D44D1A722D84007AA402 /* termas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = termas.jpg; sourceTree = "<group>"; };
+		C392D44E1A722D84007AA402 /* volcanOsorno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = volcanOsorno.jpg; sourceTree = "<group>"; };
+		C392D4501A722D84007AA402 /* bienvenida.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bienvenida.jpg; sourceTree = "<group>"; };
+		C392D4511A722D84007AA402 /* historia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = historia.jpg; sourceTree = "<group>"; };
+		C392D4521A722D84007AA402 /* pto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pto.jpg; sourceTree = "<group>"; };
+		C392D4551A722D84007AA402 /* comida@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comida@2x.png"; sourceTree = "<group>"; };
+		C392D4561A722D84007AA402 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		C392D4571A722D84007AA402 /* hostal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hostal@2x.png"; sourceTree = "<group>"; };
+		C392D4581A722D84007AA402 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
+		C392D4591A722D84007AA402 /* otros@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "otros@2x.png"; sourceTree = "<group>"; };
+		C392D45A1A722D84007AA402 /* survey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "survey@2x.png"; sourceTree = "<group>"; };
+		C392D45B1A722D84007AA402 /* tranking@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tranking@2x.png"; sourceTree = "<group>"; };
+		C392D45D1A722D84007AA402 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C392D45E1A722D84007AA402 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		C392D45F1A722D84007AA402 /* Default-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		C392D4601A722D84007AA402 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C392D4611A722D84007AA402 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C392D4631A722D84007AA402 /* cabanasPto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabanasPto.jpg; sourceTree = "<group>"; };
+		C392D4641A722D84007AA402 /* opapa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = opapa.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +201,11 @@
 		C341B0901A71BB2100F9F650 /* Informatur2 */ = {
 			isa = PBXGroup;
 			children = (
-				C341B0931A71BB2100F9F650 /* AppDelegate.swift */,
-				C341B0981A71BB2100F9F650 /* ViewController.swift */,
+				C392D41C1A721E30007AA402 /* Modelengue */,
+				C341B0B61A71BB5700F9F650 /* Clases */,
 				C341B09A1A71BB2100F9F650 /* Main.storyboard */,
 				C341B09D1A71BB2100F9F650 /* Images.xcassets */,
-				C341B09F1A71BB2100F9F650 /* LaunchScreen.xib */,
-				C341B0951A71BB2100F9F650 /* Informatur2.xcdatamodeld */,
+				C341B0931A71BB2100F9F650 /* AppDelegate.swift */,
 				C341B0911A71BB2100F9F650 /* Supporting Files */,
 			);
 			path = Informatur2;
@@ -93,6 +214,9 @@
 		C341B0911A71BB2100F9F650 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C392D42F1A722D84007AA402 /* fotitos */,
+				C341B1781A71C75C00F9F650 /* Informatur2.sqlite */,
+				C341B1681A71BF7200F9F650 /* Informatur2-Bridging-Header.h */,
 				C341B0921A71BB2100F9F650 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -113,6 +237,140 @@
 				C341B0AB1A71BB2100F9F650 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C341B0B61A71BB5700F9F650 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				C341B0B71A71BB5700F9F650 /* AtractivosVC.swift */,
+				C341B0B81A71BB5700F9F650 /* DetalleAtractivos.swift */,
+				C341B0B91A71BB5700F9F650 /* DetalleInfo.swift */,
+				C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */,
+				C341B0BB1A71BB5700F9F650 /* Home.swift */,
+				C341B0BC1A71BB5700F9F650 /* Mapas.swift */,
+				C341B0BD1A71BB5700F9F650 /* Servicios.swift */,
+			);
+			path = Clases;
+			sourceTree = "<group>";
+		};
+		C392D41C1A721E30007AA402 /* Modelengue */ = {
+			isa = PBXGroup;
+			children = (
+				C392D41D1A721E30007AA402 /* Atractivos.h */,
+				C392D41E1A721E30007AA402 /* Atractivos.m */,
+				C392D41F1A721E30007AA402 /* Bienvenida.h */,
+				C392D4201A721E30007AA402 /* Bienvenida.m */,
+				C392D4211A721E30007AA402 /* Info.h */,
+				C392D4221A721E30007AA402 /* Info.m */,
+				C392D4231A721E30007AA402 /* Informatur2.xcdatamodeld */,
+				C392D4251A721E30007AA402 /* Mapas.h */,
+				C392D4261A721E30007AA402 /* Mapas.m */,
+				C392D4271A721E30007AA402 /* Servicios.h */,
+				C392D4281A721E30007AA402 /* Servicios.m */,
+			);
+			path = Modelengue;
+			sourceTree = "<group>";
+		};
+		C392D42F1A722D84007AA402 /* fotitos */ = {
+			isa = PBXGroup;
+			children = (
+				C392D4301A722D84007AA402 /* Atractivos */,
+				C392D44F1A722D84007AA402 /* Bienvenida */,
+				C392D4531A722D84007AA402 /* recursos */,
+				C392D4621A722D84007AA402 /* Servicios */,
+			);
+			path = fotitos;
+			sourceTree = "<group>";
+		};
+		C392D4301A722D84007AA402 /* Atractivos */ = {
+			isa = PBXGroup;
+			children = (
+				C392D4311A722D84007AA402 /* ancud.jpg */,
+				C392D4321A722D84007AA402 /* atractivos.jpg */,
+				C392D4331A722D84007AA402 /* cabalgatas.jpg */,
+				C392D4341A722D84007AA402 /* canopy.jpg */,
+				C392D4351A722D84007AA402 /* castro.jpg */,
+				C392D4361A722D84007AA402 /* centroCulturalEstacion.jpg */,
+				C392D4371A722D84007AA402 /* cerroCalvario.jpg */,
+				C392D4381A722D84007AA402 /* cerroPhillippi.jpg */,
+				C392D4391A722D84007AA402 /* ensenada.jpg */,
+				C392D43A1A722D84007AA402 /* feriaArtesanal.jpg */,
+				C392D43B1A722D84007AA402 /* frutillar.jpg */,
+				C392D43C1A722D84007AA402 /* grutaDeLourdes.jpg */,
+				C392D43D1A722D84007AA402 /* iglesiaSagradoCorazon.jpg */,
+				C392D43E1A722D84007AA402 /* kayak.jpg */,
+				C392D43F1A722D84007AA402 /* lagoLLanquihue.jpg */,
+				C392D4401A722D84007AA402 /* lagoTodosLosSantos.jpg */,
+				C392D4411A722D84007AA402 /* lagunaVerde.jpg */,
+				C392D4421A722D84007AA402 /* laPoza.jpg */,
+				C392D4431A722D84007AA402 /* museoAntonioFelmer.jpg */,
+				C392D4441A722D84007AA402 /* navegacionLacustre.jpg */,
+				C392D4451A722D84007AA402 /* parqueNacionalVicente.jpg */,
+				C392D4461A722D84007AA402 /* pescaDeportiva.jpg */,
+				C392D4471A722D84007AA402 /* peulla.jpg */,
+				C392D4481A722D84007AA402 /* rafting.jpg */,
+				C392D4491A722D84007AA402 /* ralun.jpg */,
+				C392D44A1A722D84007AA402 /* rioPetrohue.jpg */,
+				C392D44B1A722D84007AA402 /* saltosDelPetrohue.jpg */,
+				C392D44C1A722D84007AA402 /* ski.jpg */,
+				C392D44D1A722D84007AA402 /* termas.jpg */,
+				C392D44E1A722D84007AA402 /* volcanOsorno.jpg */,
+			);
+			path = Atractivos;
+			sourceTree = "<group>";
+		};
+		C392D44F1A722D84007AA402 /* Bienvenida */ = {
+			isa = PBXGroup;
+			children = (
+				C392D4501A722D84007AA402 /* bienvenida.jpg */,
+				C392D4511A722D84007AA402 /* historia.jpg */,
+				C392D4521A722D84007AA402 /* pto.jpg */,
+			);
+			path = Bienvenida;
+			sourceTree = "<group>";
+		};
+		C392D4531A722D84007AA402 /* recursos */ = {
+			isa = PBXGroup;
+			children = (
+				C392D4541A722D84007AA402 /* iconos */,
+				C392D45C1A722D84007AA402 /* splashs */,
+			);
+			path = recursos;
+			sourceTree = "<group>";
+		};
+		C392D4541A722D84007AA402 /* iconos */ = {
+			isa = PBXGroup;
+			children = (
+				C392D4551A722D84007AA402 /* comida@2x.png */,
+				C392D4561A722D84007AA402 /* home@2x.png */,
+				C392D4571A722D84007AA402 /* hostal@2x.png */,
+				C392D4581A722D84007AA402 /* map@2x.png */,
+				C392D4591A722D84007AA402 /* otros@2x.png */,
+				C392D45A1A722D84007AA402 /* survey@2x.png */,
+				C392D45B1A722D84007AA402 /* tranking@2x.png */,
+			);
+			path = iconos;
+			sourceTree = "<group>";
+		};
+		C392D45C1A722D84007AA402 /* splashs */ = {
+			isa = PBXGroup;
+			children = (
+				C392D45D1A722D84007AA402 /* Default-568h@2x.png */,
+				C392D45E1A722D84007AA402 /* Default-667h@2x.png */,
+				C392D45F1A722D84007AA402 /* Default-Portrait-736h@3x.png */,
+				C392D4601A722D84007AA402 /* Default.png */,
+				C392D4611A722D84007AA402 /* Default@2x.png */,
+			);
+			path = splashs;
+			sourceTree = "<group>";
+		};
+		C392D4621A722D84007AA402 /* Servicios */ = {
+			isa = PBXGroup;
+			children = (
+				C392D4631A722D84007AA402 /* cabanasPto.jpg */,
+				C392D4641A722D84007AA402 /* opapa.jpg */,
+			);
+			path = Servicios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +453,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C392D4911A722D84007AA402 /* Default@2x.png in Resources */,
+				C341B1791A71C75C00F9F650 /* Informatur2.sqlite in Resources */,
+				C392D48D1A722D84007AA402 /* Default-568h@2x.png in Resources */,
+				C392D4661A722D84007AA402 /* atractivos.jpg in Resources */,
+				C392D46D1A722D84007AA402 /* ensenada.jpg in Resources */,
+				C392D48E1A722D84007AA402 /* Default-667h@2x.png in Resources */,
+				C392D4871A722D84007AA402 /* home@2x.png in Resources */,
+				C392D47E1A722D84007AA402 /* rioPetrohue.jpg in Resources */,
+				C392D4711A722D84007AA402 /* iglesiaSagradoCorazon.jpg in Resources */,
+				C392D4811A722D84007AA402 /* termas.jpg in Resources */,
+				C392D4701A722D84007AA402 /* grutaDeLourdes.jpg in Resources */,
+				C392D4671A722D84007AA402 /* cabalgatas.jpg in Resources */,
+				C392D4921A722D84007AA402 /* cabanasPto.jpg in Resources */,
+				C392D4831A722D84007AA402 /* bienvenida.jpg in Resources */,
+				C392D46E1A722D84007AA402 /* feriaArtesanal.jpg in Resources */,
+				C392D4861A722D84007AA402 /* comida@2x.png in Resources */,
+				C392D4761A722D84007AA402 /* laPoza.jpg in Resources */,
+				C392D4681A722D84007AA402 /* canopy.jpg in Resources */,
+				C392D48C1A722D84007AA402 /* tranking@2x.png in Resources */,
+				C392D4801A722D84007AA402 /* ski.jpg in Resources */,
 				C341B09C1A71BB2100F9F650 /* Main.storyboard in Resources */,
-				C341B0A11A71BB2100F9F650 /* LaunchScreen.xib in Resources */,
+				C392D4901A722D84007AA402 /* Default.png in Resources */,
+				C392D4881A722D84007AA402 /* hostal@2x.png in Resources */,
+				C392D46F1A722D84007AA402 /* frutillar.jpg in Resources */,
+				C392D4691A722D84007AA402 /* castro.jpg in Resources */,
+				C392D46B1A722D84007AA402 /* cerroCalvario.jpg in Resources */,
+				C392D4731A722D84007AA402 /* lagoLLanquihue.jpg in Resources */,
+				C392D4891A722D84007AA402 /* map@2x.png in Resources */,
+				C392D47B1A722D84007AA402 /* peulla.jpg in Resources */,
 				C341B09E1A71BB2100F9F650 /* Images.xcassets in Resources */,
+				C392D48B1A722D84007AA402 /* survey@2x.png in Resources */,
+				C392D46C1A722D84007AA402 /* cerroPhillippi.jpg in Resources */,
+				C392D4741A722D84007AA402 /* lagoTodosLosSantos.jpg in Resources */,
+				C392D4931A722D84007AA402 /* opapa.jpg in Resources */,
+				C392D47F1A722D84007AA402 /* saltosDelPetrohue.jpg in Resources */,
+				C392D47D1A722D84007AA402 /* ralun.jpg in Resources */,
+				C392D4791A722D84007AA402 /* parqueNacionalVicente.jpg in Resources */,
+				C392D4751A722D84007AA402 /* lagunaVerde.jpg in Resources */,
+				C392D47A1A722D84007AA402 /* pescaDeportiva.jpg in Resources */,
+				C392D4651A722D84007AA402 /* ancud.jpg in Resources */,
+				C392D48F1A722D84007AA402 /* Default-Portrait-736h@3x.png in Resources */,
+				C392D4781A722D84007AA402 /* navegacionLacustre.jpg in Resources */,
+				C392D47C1A722D84007AA402 /* rafting.jpg in Resources */,
+				C392D4841A722D84007AA402 /* historia.jpg in Resources */,
+				C392D48A1A722D84007AA402 /* otros@2x.png in Resources */,
+				C392D46A1A722D84007AA402 /* centroCulturalEstacion.jpg in Resources */,
+				C392D4821A722D84007AA402 /* volcanOsorno.jpg in Resources */,
+				C392D4851A722D84007AA402 /* pto.jpg in Resources */,
+				C392D4721A722D84007AA402 /* kayak.jpg in Resources */,
+				C392D4771A722D84007AA402 /* museoAntonioFelmer.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +520,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C341B0991A71BB2100F9F650 /* ViewController.swift in Sources */,
+				C341B0C41A71BB5700F9F650 /* Servicios.swift in Sources */,
+				C392D42C1A721E30007AA402 /* Informatur2.xcdatamodeld in Sources */,
+				C341B0C31A71BB5700F9F650 /* Mapas.swift in Sources */,
+				C392D42D1A721E30007AA402 /* Mapas.m in Sources */,
 				C341B0941A71BB2100F9F650 /* AppDelegate.swift in Sources */,
-				C341B0971A71BB2100F9F650 /* Informatur2.xcdatamodeld in Sources */,
+				C341B0C01A71BB5700F9F650 /* DetalleInfo.swift in Sources */,
+				C341B0BF1A71BB5700F9F650 /* DetalleAtractivos.swift in Sources */,
+				C341B0C11A71BB5700F9F650 /* DetalleServicios.swift in Sources */,
+				C392D42B1A721E30007AA402 /* Info.m in Sources */,
+				C392D42E1A721E30007AA402 /* Servicios.m in Sources */,
+				C341B0BE1A71BB5700F9F650 /* AtractivosVC.swift in Sources */,
+				C341B0C21A71BB5700F9F650 /* Home.swift in Sources */,
+				C392D42A1A721E30007AA402 /* Bienvenida.m in Sources */,
+				C392D4291A721E30007AA402 /* Atractivos.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,14 +562,6 @@
 				C341B09B1A71BB2100F9F650 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C341B09F1A71BB2100F9F650 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C341B0A01A71BB2100F9F650 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,9 +650,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Informatur2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Informatur2/Informatur2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +663,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Informatur2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Informatur2/Informatur2-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +724,7 @@
 				C341B0B21A71BB2100F9F650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C341B0B31A71BB2100F9F650 /* Build configuration list for PBXNativeTarget "Informatur2Tests" */ = {
 			isa = XCConfigurationList;
@@ -419,16 +733,17 @@
 				C341B0B51A71BB2100F9F650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C341B0951A71BB2100F9F650 /* Informatur2.xcdatamodeld */ = {
+		C392D4231A721E30007AA402 /* Informatur2.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C341B0961A71BB2100F9F650 /* Informatur2.xcdatamodel */,
+				C392D4241A721E30007AA402 /* Informatur2.xcdatamodel */,
 			);
-			currentVersion = C341B0961A71BB2100F9F650 /* Informatur2.xcdatamodel */;
+			currentVersion = C392D4241A721E30007AA402 /* Informatur2.xcdatamodel */;
 			path = Informatur2.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
