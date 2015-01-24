@@ -102,7 +102,7 @@ override func viewDidLoad() {
         self.scroll.addSubview(self.imagenMail)
         self.scroll.addSubview(self.mail)
     }
-
+//
     func ponFono(){
         
         self.fono.frame = CGRectMake(40,self.mail.center.y+25, self.view.frame.width, 30)
