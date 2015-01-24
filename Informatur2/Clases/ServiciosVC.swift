@@ -1,29 +1,32 @@
 //
-//  AtractivosVC.swift
+//  Servicios.swift
 //  Informatur
 //
-//  Created by Arturo Sanhueza on 20-01-15.
+//  Created by Arturo Sanhueza on 21-01-15.
 //  Copyright (c) 2015 Arturo Sanhueza. All rights reserved.
 //
 
 import UIKit
 
-class AtractivosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,NSFetchedResultsControllerDelegate {
-    var tabla = UITableView()
-    var imagen = UIImageView()
+class ServiciosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,NSFetchedResultsControllerDelegate {
+    
     var managedObjectContext: NSManagedObjectContext? = nil
     var _fetchedResultsController: NSFetchedResultsController? = nil
 
-override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    var tabla = UITableView()
+
+    override func viewDidLoad() {
         
-        self.title = "Atractivos"
-        self.tabla.delegate = self
-        self.tabla.dataSource = self
-        self.tabla.frame = CGRectMake(0, self.view.center.y-100, self.view.frame.width, self.view.frame.height-240)
-        self.view.addSubview(self.tabla)
-        self.fotito()
+    self.title = "Servicios"
+    
+    self.tabla.delegate = self
+    self.tabla.dataSource = self
+    self.tabla.frame = self.view.frame
+    self.view.addSubview(self.tabla)
+        
     }
+    
     var fetchedResultsController: NSFetchedResultsController {
         if _fetchedResultsController != nil {
             return _fetchedResultsController!
@@ -32,15 +35,14 @@ override func viewDidLoad() {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         self.managedObjectContext = appDelegate.managedObjectContext
         
-        let entity = NSEntityDescription.entityForName("Atractivos", inManagedObjectContext: self.managedObjectContext!)
+        let entity = NSEntityDescription.entityForName("Servicios", inManagedObjectContext: self.managedObjectContext!)
         fetchRequest.entity = entity
         let sortDescriptor = NSSortDescriptor(key: "tipo", ascending: true)
         let sortDescriptors = [sortDescriptor]
         let predica = NSPredicate(format: "idioma = %@", "es")
         fetchRequest.predicate = predica
-        
         fetchRequest.sortDescriptors = [sortDescriptor]
-        let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext!, sectionNameKeyPath: "tipo", cacheName: nil)
+        let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext!, sectionNameKeyPath:"tipo", cacheName: nil)
         aFetchedResultsController.delegate = self
         _fetchedResultsController = aFetchedResultsController
         
@@ -50,35 +52,24 @@ override func viewDidLoad() {
         }
         return _fetchedResultsController!
     }
-  
-    
-    func fotito(){
-    
-        self.imagen.frame = CGRectMake(0, 64, self.view.frame.width, self.view.frame.height/3)
-        self.imagen.image = UIImage(named: "atractivos.jpg")
-        self.view.addSubview(self.imagen)
-    }
-    
+
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 48.0
+        return 75.0
     }
-   
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.fetchedResultsController.sections?.count ?? 0
     }
-    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         let sectionInfo = self.fetchedResultsController.sections![section] as NSFetchedResultsSectionInfo
         return sectionInfo.numberOfObjects
     }
-    
-    
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         let sectionInfo = self.fetchedResultsController.sections![section] as NSFetchedResultsSectionInfo
-
+        
         return sectionInfo.name
     }
     
@@ -86,32 +77,45 @@ override func viewDidLoad() {
         
         var cell = tableView.dequeueReusableCellWithIdentifier("cell") as? UITableViewCell
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
         }
-        
-        let atractivo = self.fetchedResultsController.objectAtIndexPath(indexPath) as Atractivos
-        cell?.textLabel?.font = UIFont(name: "Helvetica", size: 15)
-        cell?.textLabel?.text = atractivo.nombre
+        let servicio = self.fetchedResultsController.objectAtIndexPath(indexPath) as Servicios
 
+        cell!.textLabel!.text = servicio.nombre
+        
+        if(indexPath.section == 0){
+            cell?.imageView?.image = UIImage(named: "hostal.png")
+
+        
+        }
+      else if(indexPath.section == 1){
+            
+            cell?.imageView?.image = UIImage(named: "otros.png")
+            
+            
+        }
+        else{
+        
+        cell?.imageView?.image = UIImage(named: "comida.png")
+        }
         return cell!
     }
-    
-    
+
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let info = self.storyboard?.instantiateViewControllerWithIdentifier("DetalleAtractivos") as DetalleAtractivos
-        let atractivo = self.fetchedResultsController.objectAtIndexPath(indexPath) as Atractivos
+        let info = self.storyboard?.instantiateViewControllerWithIdentifier("DetalleServicios") as DetalleServicios
+        let servicio = self.fetchedResultsController.objectAtIndexPath(indexPath) as Servicios
 
-            info.stringImagen = atractivo.imagen
-            info.stringTitulo = atractivo.nombre
-            info.stringContenido = atractivo.detalle
-            self.navigationController?.pushViewController(info, animated: true)
-    }
+        info.stringImagen = servicio.foto
+
+        info.stringTitulo = servicio.nombre
+        info.stringWeb = servicio.web
+        info.stringMail = servicio.mail
+        info.stringFono = servicio.fono
+        info.stringContenido = servicio.direccion
 
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.navigationController?.pushViewController(info, animated: true)
     }
-
 }
+

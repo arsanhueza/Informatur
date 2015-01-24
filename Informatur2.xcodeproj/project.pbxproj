@@ -17,14 +17,42 @@
 		C341B0C11A71BB5700F9F650 /* DetalleServicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */; };
 		C341B0C21A71BB5700F9F650 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BB1A71BB5700F9F650 /* Home.swift */; };
 		C341B0C31A71BB5700F9F650 /* Mapas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BC1A71BB5700F9F650 /* Mapas.swift */; };
-		C341B0C41A71BB5700F9F650 /* Servicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BD1A71BB5700F9F650 /* Servicios.swift */; };
+		C341B0C41A71BB5700F9F650 /* ServiciosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BD1A71BB5700F9F650 /* ServiciosVC.swift */; };
 		C341B1791A71C75C00F9F650 /* Informatur2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C341B1781A71C75C00F9F650 /* Informatur2.sqlite */; };
-		C392D4291A721E30007AA402 /* Atractivos.m in Sources */ = {isa = PBXBuildFile; fileRef = C392D41E1A721E30007AA402 /* Atractivos.m */; };
-		C392D42A1A721E30007AA402 /* Bienvenida.m in Sources */ = {isa = PBXBuildFile; fileRef = C392D4201A721E30007AA402 /* Bienvenida.m */; };
-		C392D42B1A721E30007AA402 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = C392D4221A721E30007AA402 /* Info.m */; };
+		C3526AE91A72E318009F4DA7 /* aromaCalafate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AD11A72E318009F4DA7 /* aromaCalafate.jpg */; };
+		C3526AEA1A72E318009F4DA7 /* artesaniaPuertoGres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AD21A72E318009F4DA7 /* artesaniaPuertoGres.jpg */; };
+		C3526AEB1A72E318009F4DA7 /* bombonOriental.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AD31A72E318009F4DA7 /* bombonOriental.jpg */; };
+		C3526AEC1A72E318009F4DA7 /* cabanasDressden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AD41A72E318009F4DA7 /* cabanasDressden.jpg */; };
+		C3526AED1A72E318009F4DA7 /* cabanasPuertoVaras.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AD51A72E318009F4DA7 /* cabanasPuertoVaras.jpg */; };
+		C3526AEE1A72E318009F4DA7 /* cabanasRioLodge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AD61A72E318009F4DA7 /* cabanasRioLodge.jpg */; };
+		C3526AEF1A72E318009F4DA7 /* cabanasZajay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AD71A72E318009F4DA7 /* cabanasZajay.jpg */; };
+		C3526AF01A72E318009F4DA7 /* cafeHaussmann.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AD81A72E318009F4DA7 /* cafeHaussmann.jpg */; };
+		C3526AF11A72E318009F4DA7 /* deinHouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AD91A72E318009F4DA7 /* deinHouse.jpg */; };
+		C3526AF21A72E318009F4DA7 /* eloiaBistro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526ADA1A72E318009F4DA7 /* eloiaBistro.jpg */; };
+		C3526AF31A72E318009F4DA7 /* elPatioDeMiCasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526ADB1A72E318009F4DA7 /* elPatioDeMiCasa.jpg */; };
+		C3526AF41A72E318009F4DA7 /* elRetorno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526ADC1A72E318009F4DA7 /* elRetorno.jpg */; };
+		C3526AF51A72E318009F4DA7 /* guaton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526ADD1A72E318009F4DA7 /* guaton.jpg */; };
+		C3526AF61A72E318009F4DA7 /* hospedajeDonRaul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526ADE1A72E318009F4DA7 /* hospedajeDonRaul.jpg */; };
+		C3526AF71A72E318009F4DA7 /* hospedajeGerdaOpitz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526ADF1A72E318009F4DA7 /* hospedajeGerdaOpitz.jpg */; };
+		C3526AF81A72E318009F4DA7 /* hostalFamiliar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AE01A72E318009F4DA7 /* hostalFamiliar.jpg */; };
+		C3526AF91A72E318009F4DA7 /* hostalTantePuppe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AE11A72E318009F4DA7 /* hostalTantePuppe.jpg */; };
+		C3526AFA1A72E318009F4DA7 /* hotalOpapaJuan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AE21A72E318009F4DA7 /* hotalOpapaJuan.jpg */; };
+		C3526AFB1A72E318009F4DA7 /* lavanderia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AE31A72E318009F4DA7 /* lavanderia.jpg */; };
+		C3526AFC1A72E318009F4DA7 /* mozzarella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AE41A72E318009F4DA7 /* mozzarella.jpg */; };
+		C3526AFD1A72E318009F4DA7 /* puroToro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AE51A72E318009F4DA7 /* puroToro.jpg */; };
+		C3526B001A72E318009F4DA7 /* tierraOutdoors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AE81A72E318009F4DA7 /* tierraOutdoors.jpg */; };
+		C3526B021A72EA7E009F4DA7 /* chancerel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526B011A72EA7E009F4DA7 /* chancerel.jpg */; };
+		C3526B041A72EB4B009F4DA7 /* cafeMamusia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526B031A72EB4B009F4DA7 /* cafeMamusia.jpg */; };
+		C3526B061A72EB5A009F4DA7 /* rentCarDressden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526B051A72EB59009F4DA7 /* rentCarDressden.jpg */; };
+		C3526B091A72FFFF009F4DA7 /* Atractivos.m in Sources */ = {isa = PBXBuildFile; fileRef = C3526B081A72FFFF009F4DA7 /* Atractivos.m */; };
+		C3526B0C1A730000009F4DA7 /* Bienvenida.m in Sources */ = {isa = PBXBuildFile; fileRef = C3526B0B1A730000009F4DA7 /* Bienvenida.m */; };
+		C3526B0F1A730000009F4DA7 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = C3526B0E1A730000009F4DA7 /* Info.m */; };
+		C3526B121A730000009F4DA7 /* Mapas.m in Sources */ = {isa = PBXBuildFile; fileRef = C3526B111A730000009F4DA7 /* Mapas.m */; };
+		C3526B151A730000009F4DA7 /* Servicios.m in Sources */ = {isa = PBXBuildFile; fileRef = C3526B141A730000009F4DA7 /* Servicios.m */; };
+		C3526B171A730D41009F4DA7 /* fono@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3526B161A730D41009F4DA7 /* fono@2x.png */; };
+		C3526B1A1A730E28009F4DA7 /* mail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3526B181A730E28009F4DA7 /* mail@2x.png */; };
+		C3526B1B1A730E28009F4DA7 /* web@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3526B191A730E28009F4DA7 /* web@2x.png */; };
 		C392D42C1A721E30007AA402 /* Informatur2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C392D4231A721E30007AA402 /* Informatur2.xcdatamodeld */; };
-		C392D42D1A721E30007AA402 /* Mapas.m in Sources */ = {isa = PBXBuildFile; fileRef = C392D4261A721E30007AA402 /* Mapas.m */; };
-		C392D42E1A721E30007AA402 /* Servicios.m in Sources */ = {isa = PBXBuildFile; fileRef = C392D4281A721E30007AA402 /* Servicios.m */; };
 		C392D4651A722D84007AA402 /* ancud.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4311A722D84007AA402 /* ancud.jpg */; };
 		C392D4661A722D84007AA402 /* atractivos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4321A722D84007AA402 /* atractivos.jpg */; };
 		C392D4671A722D84007AA402 /* cabalgatas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4331A722D84007AA402 /* cabalgatas.jpg */; };
@@ -70,8 +98,6 @@
 		C392D48F1A722D84007AA402 /* Default-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D45F1A722D84007AA402 /* Default-Portrait-736h@3x.png */; };
 		C392D4901A722D84007AA402 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D4601A722D84007AA402 /* Default.png */; };
 		C392D4911A722D84007AA402 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C392D4611A722D84007AA402 /* Default@2x.png */; };
-		C392D4921A722D84007AA402 /* cabanasPto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4631A722D84007AA402 /* cabanasPto.jpg */; };
-		C392D4931A722D84007AA402 /* opapa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4641A722D84007AA402 /* opapa.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,20 +125,48 @@
 		C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicios.swift; sourceTree = "<group>"; };
 		C341B0BB1A71BB5700F9F650 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		C341B0BC1A71BB5700F9F650 /* Mapas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapas.swift; sourceTree = "<group>"; };
-		C341B0BD1A71BB5700F9F650 /* Servicios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servicios.swift; sourceTree = "<group>"; };
+		C341B0BD1A71BB5700F9F650 /* ServiciosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosVC.swift; sourceTree = "<group>"; };
 		C341B1681A71BF7200F9F650 /* Informatur2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Informatur2-Bridging-Header.h"; sourceTree = "<group>"; };
 		C341B1781A71C75C00F9F650 /* Informatur2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Informatur2.sqlite; sourceTree = SOURCE_ROOT; };
-		C392D41D1A721E30007AA402 /* Atractivos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atractivos.h; sourceTree = "<group>"; };
-		C392D41E1A721E30007AA402 /* Atractivos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atractivos.m; sourceTree = "<group>"; };
-		C392D41F1A721E30007AA402 /* Bienvenida.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bienvenida.h; sourceTree = "<group>"; };
-		C392D4201A721E30007AA402 /* Bienvenida.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bienvenida.m; sourceTree = "<group>"; };
-		C392D4211A721E30007AA402 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
-		C392D4221A721E30007AA402 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		C3526AD11A72E318009F4DA7 /* aromaCalafate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aromaCalafate.jpg; sourceTree = "<group>"; };
+		C3526AD21A72E318009F4DA7 /* artesaniaPuertoGres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = artesaniaPuertoGres.jpg; sourceTree = "<group>"; };
+		C3526AD31A72E318009F4DA7 /* bombonOriental.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bombonOriental.jpg; sourceTree = "<group>"; };
+		C3526AD41A72E318009F4DA7 /* cabanasDressden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabanasDressden.jpg; sourceTree = "<group>"; };
+		C3526AD51A72E318009F4DA7 /* cabanasPuertoVaras.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabanasPuertoVaras.jpg; sourceTree = "<group>"; };
+		C3526AD61A72E318009F4DA7 /* cabanasRioLodge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabanasRioLodge.jpg; sourceTree = "<group>"; };
+		C3526AD71A72E318009F4DA7 /* cabanasZajay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabanasZajay.jpg; sourceTree = "<group>"; };
+		C3526AD81A72E318009F4DA7 /* cafeHaussmann.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafeHaussmann.jpg; sourceTree = "<group>"; };
+		C3526AD91A72E318009F4DA7 /* deinHouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deinHouse.jpg; sourceTree = "<group>"; };
+		C3526ADA1A72E318009F4DA7 /* eloiaBistro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eloiaBistro.jpg; sourceTree = "<group>"; };
+		C3526ADB1A72E318009F4DA7 /* elPatioDeMiCasa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elPatioDeMiCasa.jpg; sourceTree = "<group>"; };
+		C3526ADC1A72E318009F4DA7 /* elRetorno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elRetorno.jpg; sourceTree = "<group>"; };
+		C3526ADD1A72E318009F4DA7 /* guaton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guaton.jpg; sourceTree = "<group>"; };
+		C3526ADE1A72E318009F4DA7 /* hospedajeDonRaul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hospedajeDonRaul.jpg; sourceTree = "<group>"; };
+		C3526ADF1A72E318009F4DA7 /* hospedajeGerdaOpitz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hospedajeGerdaOpitz.jpg; sourceTree = "<group>"; };
+		C3526AE01A72E318009F4DA7 /* hostalFamiliar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hostalFamiliar.jpg; sourceTree = "<group>"; };
+		C3526AE11A72E318009F4DA7 /* hostalTantePuppe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hostalTantePuppe.jpg; sourceTree = "<group>"; };
+		C3526AE21A72E318009F4DA7 /* hotalOpapaJuan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotalOpapaJuan.jpg; sourceTree = "<group>"; };
+		C3526AE31A72E318009F4DA7 /* lavanderia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lavanderia.jpg; sourceTree = "<group>"; };
+		C3526AE41A72E318009F4DA7 /* mozzarella.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mozzarella.jpg; sourceTree = "<group>"; };
+		C3526AE51A72E318009F4DA7 /* puroToro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puroToro.jpg; sourceTree = "<group>"; };
+		C3526AE81A72E318009F4DA7 /* tierraOutdoors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tierraOutdoors.jpg; sourceTree = "<group>"; };
+		C3526B011A72EA7E009F4DA7 /* chancerel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chancerel.jpg; sourceTree = "<group>"; };
+		C3526B031A72EB4B009F4DA7 /* cafeMamusia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafeMamusia.jpg; sourceTree = "<group>"; };
+		C3526B051A72EB59009F4DA7 /* rentCarDressden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rentCarDressden.jpg; sourceTree = "<group>"; };
+		C3526B071A72FFFF009F4DA7 /* Atractivos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atractivos.h; sourceTree = "<group>"; };
+		C3526B081A72FFFF009F4DA7 /* Atractivos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atractivos.m; sourceTree = "<group>"; };
+		C3526B0A1A730000009F4DA7 /* Bienvenida.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bienvenida.h; sourceTree = "<group>"; };
+		C3526B0B1A730000009F4DA7 /* Bienvenida.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bienvenida.m; sourceTree = "<group>"; };
+		C3526B0D1A730000009F4DA7 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		C3526B0E1A730000009F4DA7 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		C3526B101A730000009F4DA7 /* Mapas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapas.h; sourceTree = "<group>"; };
+		C3526B111A730000009F4DA7 /* Mapas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapas.m; sourceTree = "<group>"; };
+		C3526B131A730000009F4DA7 /* Servicios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Servicios.h; sourceTree = "<group>"; };
+		C3526B141A730000009F4DA7 /* Servicios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Servicios.m; sourceTree = "<group>"; };
+		C3526B161A730D41009F4DA7 /* fono@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fono@2x.png"; sourceTree = "<group>"; };
+		C3526B181A730E28009F4DA7 /* mail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail@2x.png"; sourceTree = "<group>"; };
+		C3526B191A730E28009F4DA7 /* web@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web@2x.png"; sourceTree = "<group>"; };
 		C392D4241A721E30007AA402 /* Informatur2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Informatur2.xcdatamodel; sourceTree = "<group>"; };
-		C392D4251A721E30007AA402 /* Mapas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapas.h; sourceTree = "<group>"; };
-		C392D4261A721E30007AA402 /* Mapas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapas.m; sourceTree = "<group>"; };
-		C392D4271A721E30007AA402 /* Servicios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Servicios.h; sourceTree = "<group>"; };
-		C392D4281A721E30007AA402 /* Servicios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Servicios.m; sourceTree = "<group>"; };
 		C392D4311A722D84007AA402 /* ancud.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ancud.jpg; sourceTree = "<group>"; };
 		C392D4321A722D84007AA402 /* atractivos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atractivos.jpg; sourceTree = "<group>"; };
 		C392D4331A722D84007AA402 /* cabalgatas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabalgatas.jpg; sourceTree = "<group>"; };
@@ -158,8 +212,6 @@
 		C392D45F1A722D84007AA402 /* Default-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait-736h@3x.png"; sourceTree = "<group>"; };
 		C392D4601A722D84007AA402 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C392D4611A722D84007AA402 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		C392D4631A722D84007AA402 /* cabanasPto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabanasPto.jpg; sourceTree = "<group>"; };
-		C392D4641A722D84007AA402 /* opapa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = opapa.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,25 +300,57 @@
 				C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */,
 				C341B0BB1A71BB5700F9F650 /* Home.swift */,
 				C341B0BC1A71BB5700F9F650 /* Mapas.swift */,
-				C341B0BD1A71BB5700F9F650 /* Servicios.swift */,
+				C341B0BD1A71BB5700F9F650 /* ServiciosVC.swift */,
 			);
 			path = Clases;
+			sourceTree = "<group>";
+		};
+		C3526AD01A72E318009F4DA7 /* Servicios */ = {
+			isa = PBXGroup;
+			children = (
+				C3526B011A72EA7E009F4DA7 /* chancerel.jpg */,
+				C3526AD11A72E318009F4DA7 /* aromaCalafate.jpg */,
+				C3526AD21A72E318009F4DA7 /* artesaniaPuertoGres.jpg */,
+				C3526AD31A72E318009F4DA7 /* bombonOriental.jpg */,
+				C3526AD41A72E318009F4DA7 /* cabanasDressden.jpg */,
+				C3526AD51A72E318009F4DA7 /* cabanasPuertoVaras.jpg */,
+				C3526AD61A72E318009F4DA7 /* cabanasRioLodge.jpg */,
+				C3526AD71A72E318009F4DA7 /* cabanasZajay.jpg */,
+				C3526AD81A72E318009F4DA7 /* cafeHaussmann.jpg */,
+				C3526AD91A72E318009F4DA7 /* deinHouse.jpg */,
+				C3526ADA1A72E318009F4DA7 /* eloiaBistro.jpg */,
+				C3526ADB1A72E318009F4DA7 /* elPatioDeMiCasa.jpg */,
+				C3526ADC1A72E318009F4DA7 /* elRetorno.jpg */,
+				C3526ADD1A72E318009F4DA7 /* guaton.jpg */,
+				C3526ADE1A72E318009F4DA7 /* hospedajeDonRaul.jpg */,
+				C3526ADF1A72E318009F4DA7 /* hospedajeGerdaOpitz.jpg */,
+				C3526AE01A72E318009F4DA7 /* hostalFamiliar.jpg */,
+				C3526B051A72EB59009F4DA7 /* rentCarDressden.jpg */,
+				C3526AE11A72E318009F4DA7 /* hostalTantePuppe.jpg */,
+				C3526AE21A72E318009F4DA7 /* hotalOpapaJuan.jpg */,
+				C3526AE31A72E318009F4DA7 /* lavanderia.jpg */,
+				C3526AE41A72E318009F4DA7 /* mozzarella.jpg */,
+				C3526AE51A72E318009F4DA7 /* puroToro.jpg */,
+				C3526AE81A72E318009F4DA7 /* tierraOutdoors.jpg */,
+				C3526B031A72EB4B009F4DA7 /* cafeMamusia.jpg */,
+			);
+			path = Servicios;
 			sourceTree = "<group>";
 		};
 		C392D41C1A721E30007AA402 /* Modelengue */ = {
 			isa = PBXGroup;
 			children = (
-				C392D41D1A721E30007AA402 /* Atractivos.h */,
-				C392D41E1A721E30007AA402 /* Atractivos.m */,
-				C392D41F1A721E30007AA402 /* Bienvenida.h */,
-				C392D4201A721E30007AA402 /* Bienvenida.m */,
-				C392D4211A721E30007AA402 /* Info.h */,
-				C392D4221A721E30007AA402 /* Info.m */,
 				C392D4231A721E30007AA402 /* Informatur2.xcdatamodeld */,
-				C392D4251A721E30007AA402 /* Mapas.h */,
-				C392D4261A721E30007AA402 /* Mapas.m */,
-				C392D4271A721E30007AA402 /* Servicios.h */,
-				C392D4281A721E30007AA402 /* Servicios.m */,
+				C3526B131A730000009F4DA7 /* Servicios.h */,
+				C3526B141A730000009F4DA7 /* Servicios.m */,
+				C3526B101A730000009F4DA7 /* Mapas.h */,
+				C3526B111A730000009F4DA7 /* Mapas.m */,
+				C3526B0D1A730000009F4DA7 /* Info.h */,
+				C3526B0E1A730000009F4DA7 /* Info.m */,
+				C3526B0A1A730000009F4DA7 /* Bienvenida.h */,
+				C3526B0B1A730000009F4DA7 /* Bienvenida.m */,
+				C3526B071A72FFFF009F4DA7 /* Atractivos.h */,
+				C3526B081A72FFFF009F4DA7 /* Atractivos.m */,
 			);
 			path = Modelengue;
 			sourceTree = "<group>";
@@ -274,10 +358,10 @@
 		C392D42F1A722D84007AA402 /* fotitos */ = {
 			isa = PBXGroup;
 			children = (
+				C3526AD01A72E318009F4DA7 /* Servicios */,
 				C392D4301A722D84007AA402 /* Atractivos */,
 				C392D44F1A722D84007AA402 /* Bienvenida */,
 				C392D4531A722D84007AA402 /* recursos */,
-				C392D4621A722D84007AA402 /* Servicios */,
 			);
 			path = fotitos;
 			sourceTree = "<group>";
@@ -341,6 +425,9 @@
 		C392D4541A722D84007AA402 /* iconos */ = {
 			isa = PBXGroup;
 			children = (
+				C3526B181A730E28009F4DA7 /* mail@2x.png */,
+				C3526B191A730E28009F4DA7 /* web@2x.png */,
+				C3526B161A730D41009F4DA7 /* fono@2x.png */,
 				C392D4551A722D84007AA402 /* comida@2x.png */,
 				C392D4561A722D84007AA402 /* home@2x.png */,
 				C392D4571A722D84007AA402 /* hostal@2x.png */,
@@ -362,15 +449,6 @@
 				C392D4611A722D84007AA402 /* Default@2x.png */,
 			);
 			path = splashs;
-			sourceTree = "<group>";
-		};
-		C392D4621A722D84007AA402 /* Servicios */ = {
-			isa = PBXGroup;
-			children = (
-				C392D4631A722D84007AA402 /* cabanasPto.jpg */,
-				C392D4641A722D84007AA402 /* opapa.jpg */,
-			);
-			path = Servicios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,10 +531,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3526AF31A72E318009F4DA7 /* elPatioDeMiCasa.jpg in Resources */,
 				C392D4911A722D84007AA402 /* Default@2x.png in Resources */,
+				C3526AF11A72E318009F4DA7 /* deinHouse.jpg in Resources */,
 				C341B1791A71C75C00F9F650 /* Informatur2.sqlite in Resources */,
 				C392D48D1A722D84007AA402 /* Default-568h@2x.png in Resources */,
+				C3526B041A72EB4B009F4DA7 /* cafeMamusia.jpg in Resources */,
+				C3526AF91A72E318009F4DA7 /* hostalTantePuppe.jpg in Resources */,
 				C392D4661A722D84007AA402 /* atractivos.jpg in Resources */,
+				C3526B001A72E318009F4DA7 /* tierraOutdoors.jpg in Resources */,
 				C392D46D1A722D84007AA402 /* ensenada.jpg in Resources */,
 				C392D48E1A722D84007AA402 /* Default-667h@2x.png in Resources */,
 				C392D4871A722D84007AA402 /* home@2x.png in Resources */,
@@ -464,36 +547,57 @@
 				C392D4711A722D84007AA402 /* iglesiaSagradoCorazon.jpg in Resources */,
 				C392D4811A722D84007AA402 /* termas.jpg in Resources */,
 				C392D4701A722D84007AA402 /* grutaDeLourdes.jpg in Resources */,
+				C3526AFA1A72E318009F4DA7 /* hotalOpapaJuan.jpg in Resources */,
 				C392D4671A722D84007AA402 /* cabalgatas.jpg in Resources */,
-				C392D4921A722D84007AA402 /* cabanasPto.jpg in Resources */,
 				C392D4831A722D84007AA402 /* bienvenida.jpg in Resources */,
+				C3526AE91A72E318009F4DA7 /* aromaCalafate.jpg in Resources */,
+				C3526AEA1A72E318009F4DA7 /* artesaniaPuertoGres.jpg in Resources */,
 				C392D46E1A722D84007AA402 /* feriaArtesanal.jpg in Resources */,
 				C392D4861A722D84007AA402 /* comida@2x.png in Resources */,
+				C3526AED1A72E318009F4DA7 /* cabanasPuertoVaras.jpg in Resources */,
+				C3526B171A730D41009F4DA7 /* fono@2x.png in Resources */,
 				C392D4761A722D84007AA402 /* laPoza.jpg in Resources */,
 				C392D4681A722D84007AA402 /* canopy.jpg in Resources */,
 				C392D48C1A722D84007AA402 /* tranking@2x.png in Resources */,
+				C3526AFB1A72E318009F4DA7 /* lavanderia.jpg in Resources */,
+				C3526AFC1A72E318009F4DA7 /* mozzarella.jpg in Resources */,
 				C392D4801A722D84007AA402 /* ski.jpg in Resources */,
 				C341B09C1A71BB2100F9F650 /* Main.storyboard in Resources */,
+				C3526AEB1A72E318009F4DA7 /* bombonOriental.jpg in Resources */,
+				C3526B1A1A730E28009F4DA7 /* mail@2x.png in Resources */,
+				C3526AF41A72E318009F4DA7 /* elRetorno.jpg in Resources */,
 				C392D4901A722D84007AA402 /* Default.png in Resources */,
+				C3526AFD1A72E318009F4DA7 /* puroToro.jpg in Resources */,
 				C392D4881A722D84007AA402 /* hostal@2x.png in Resources */,
 				C392D46F1A722D84007AA402 /* frutillar.jpg in Resources */,
 				C392D4691A722D84007AA402 /* castro.jpg in Resources */,
 				C392D46B1A722D84007AA402 /* cerroCalvario.jpg in Resources */,
 				C392D4731A722D84007AA402 /* lagoLLanquihue.jpg in Resources */,
+				C3526B061A72EB5A009F4DA7 /* rentCarDressden.jpg in Resources */,
 				C392D4891A722D84007AA402 /* map@2x.png in Resources */,
 				C392D47B1A722D84007AA402 /* peulla.jpg in Resources */,
+				C3526AEC1A72E318009F4DA7 /* cabanasDressden.jpg in Resources */,
+				C3526AF71A72E318009F4DA7 /* hospedajeGerdaOpitz.jpg in Resources */,
+				C3526B021A72EA7E009F4DA7 /* chancerel.jpg in Resources */,
 				C341B09E1A71BB2100F9F650 /* Images.xcassets in Resources */,
+				C3526AF61A72E318009F4DA7 /* hospedajeDonRaul.jpg in Resources */,
 				C392D48B1A722D84007AA402 /* survey@2x.png in Resources */,
 				C392D46C1A722D84007AA402 /* cerroPhillippi.jpg in Resources */,
 				C392D4741A722D84007AA402 /* lagoTodosLosSantos.jpg in Resources */,
-				C392D4931A722D84007AA402 /* opapa.jpg in Resources */,
+				C3526B1B1A730E28009F4DA7 /* web@2x.png in Resources */,
+				C3526AF01A72E318009F4DA7 /* cafeHaussmann.jpg in Resources */,
+				C3526AF51A72E318009F4DA7 /* guaton.jpg in Resources */,
 				C392D47F1A722D84007AA402 /* saltosDelPetrohue.jpg in Resources */,
 				C392D47D1A722D84007AA402 /* ralun.jpg in Resources */,
 				C392D4791A722D84007AA402 /* parqueNacionalVicente.jpg in Resources */,
 				C392D4751A722D84007AA402 /* lagunaVerde.jpg in Resources */,
 				C392D47A1A722D84007AA402 /* pescaDeportiva.jpg in Resources */,
+				C3526AF81A72E318009F4DA7 /* hostalFamiliar.jpg in Resources */,
 				C392D4651A722D84007AA402 /* ancud.jpg in Resources */,
+				C3526AEF1A72E318009F4DA7 /* cabanasZajay.jpg in Resources */,
 				C392D48F1A722D84007AA402 /* Default-Portrait-736h@3x.png in Resources */,
+				C3526AF21A72E318009F4DA7 /* eloiaBistro.jpg in Resources */,
+				C3526AEE1A72E318009F4DA7 /* cabanasRioLodge.jpg in Resources */,
 				C392D4781A722D84007AA402 /* navegacionLacustre.jpg in Resources */,
 				C392D47C1A722D84007AA402 /* rafting.jpg in Resources */,
 				C392D4841A722D84007AA402 /* historia.jpg in Resources */,
@@ -520,20 +624,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C341B0C41A71BB5700F9F650 /* Servicios.swift in Sources */,
+				C341B0C41A71BB5700F9F650 /* ServiciosVC.swift in Sources */,
 				C392D42C1A721E30007AA402 /* Informatur2.xcdatamodeld in Sources */,
 				C341B0C31A71BB5700F9F650 /* Mapas.swift in Sources */,
-				C392D42D1A721E30007AA402 /* Mapas.m in Sources */,
+				C3526B121A730000009F4DA7 /* Mapas.m in Sources */,
 				C341B0941A71BB2100F9F650 /* AppDelegate.swift in Sources */,
 				C341B0C01A71BB5700F9F650 /* DetalleInfo.swift in Sources */,
+				C3526B0F1A730000009F4DA7 /* Info.m in Sources */,
 				C341B0BF1A71BB5700F9F650 /* DetalleAtractivos.swift in Sources */,
+				C3526B0C1A730000009F4DA7 /* Bienvenida.m in Sources */,
+				C3526B151A730000009F4DA7 /* Servicios.m in Sources */,
 				C341B0C11A71BB5700F9F650 /* DetalleServicios.swift in Sources */,
-				C392D42B1A721E30007AA402 /* Info.m in Sources */,
-				C392D42E1A721E30007AA402 /* Servicios.m in Sources */,
+				C3526B091A72FFFF009F4DA7 /* Atractivos.m in Sources */,
 				C341B0BE1A71BB5700F9F650 /* AtractivosVC.swift in Sources */,
 				C341B0C21A71BB5700F9F650 /* Home.swift in Sources */,
-				C392D42A1A721E30007AA402 /* Bienvenida.m in Sources */,
-				C392D4291A721E30007AA402 /* Atractivos.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

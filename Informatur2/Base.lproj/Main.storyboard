@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="-70" y="1018"/>
         </scene>
-        <!--Servicios-->
+        <!--ServiciosVC-->
         <scene sceneID="TBR-0y-mhv">
             <objects>
-                <viewController id="s4s-BB-jho" customClass="Servicios" customModule="Informatur2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s4s-BB-jho" customClass="ServiciosVC" customModule="Informatur2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="srf-IN-diy"/>
                         <viewControllerLayoutGuide type="bottom" id="SQQ-8g-LHo"/>

@@ -2,25 +2,25 @@
 //  Servicios.m
 //  Informatur2
 //
-//  Created by Arturo Sanhueza on 22-01-15.
+//  Created by Arturo Sanhueza on 23-01-15.
 //  Copyright (c) 2015 Arturo Sanhueza. All rights reserved.
 //
 
 #import "Servicios.h"
+#import "Mapas.h"
 
 
 @implementation Servicios
 
-@dynamic tipo;
-@dynamic nombre;
-@dynamic foto;
-@dynamic web;
-@dynamic fono;
-@dynamic mail;
 @dynamic direccion;
+@dynamic fono;
+@dynamic foto;
 @dynamic idioma;
+@dynamic mail;
+@dynamic nombre;
+@dynamic tipo;
+@dynamic web;
+//@dynamic contenido;
 @dynamic mapa;
-//@dynamic descripcion;
-
 
 @end
