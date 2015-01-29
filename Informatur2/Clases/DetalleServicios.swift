@@ -65,7 +65,7 @@ override func viewDidLoad() {
     
     func ponTitulengue(){
     
-        self.titulo.frame = CGRectMake(20, self.imagen.frame.height, self.view.frame.width, 80)
+        self.titulo.frame = CGRectMake(20, self.imagen.frame.height, self.view.frame.width, 60)
         self.titulo.text = self.stringTitulo
         self.titulo.numberOfLines = 2
         self.titulo.textAlignment = NSTextAlignment.Left
@@ -77,13 +77,13 @@ override func viewDidLoad() {
     
     func ponWeb(){
         
-        self.web.frame = CGRectMake(40, self.titulo.center.y+25, self.view.frame.width, 30)
+        self.web.frame = CGRectMake(40, self.titulo.center.y+30, self.view.frame.width-40, 30)
         self.web.text = self.stringWeb
         self.web.numberOfLines = 2
         self.web.textAlignment = NSTextAlignment.Left
         self.web.font = UIFont(name: "Helvetica", size: 13)
         
-        self.imagenWeb.frame = CGRectMake(5, self.web.frame.origin.y, 25, 25)
+        self.imagenWeb.frame = CGRectMake(5, self.web.frame.origin.y, 30, 30)
         self.imagenWeb.image = UIImage(named: "web.png")
         
         self.scroll.addSubview(self.imagenWeb)
@@ -92,12 +92,12 @@ override func viewDidLoad() {
 
     func ponMail(){
         
-        self.mail.frame = CGRectMake(40, self.web.center.y+25, self.view.frame.width, 30)
+        self.mail.frame = CGRectMake(40, self.web.center.y+30, self.view.frame.width-40, 30)
         self.mail.text = self.stringMail
         self.mail.numberOfLines = 2
         self.mail.textAlignment = NSTextAlignment.Left
         self.mail.font = UIFont(name: "Helvetica", size: 13)
-        self.imagenMail.frame = CGRectMake(5, self.mail.frame.origin.y, 25, 25)
+        self.imagenMail.frame = CGRectMake(5, self.mail.frame.origin.y, 30, 30)
         self.imagenMail.image = UIImage(named: "mail.png")
         self.scroll.addSubview(self.imagenMail)
         self.scroll.addSubview(self.mail)
@@ -105,14 +105,14 @@ override func viewDidLoad() {
 //
     func ponFono(){
         
-        self.fono.frame = CGRectMake(40,self.mail.center.y+25, self.view.frame.width, 30)
+        self.fono.frame = CGRectMake(40,self.mail.center.y+30, self.view.frame.width-40, 30)
         self.fono.text = self.stringFono
         self.fono.numberOfLines = 2
         self.fono.textAlignment = NSTextAlignment.Left
         self.fono.font = UIFont(name: "Helvetica", size: 13)
         
-        self.imagenFono.frame = CGRectMake(5, self.fono.frame.origin.y, 25, 25)
-        self.imagenFono.image = UIImage(named: "fono.png")
+        self.imagenFono.frame = CGRectMake(5, self.fono.frame.origin.y, 30, 30)
+        self.imagenFono.image = UIImage(named: "contacto.png")
 
         self.scroll.addSubview(self.imagenFono)
         self.scroll.addSubview(self.fono)
@@ -121,7 +121,7 @@ override func viewDidLoad() {
     
     func ponContenio(){
         
-        self.contenido.frame = CGRectMake(20,self.fono.center.y+25, self.view.frame.width, 300)
+        self.contenido.frame = CGRectMake(20,self.fono.center.y+30, self.view.frame.width-20, 300)
         self.contenido.text = self.stringContenido
         self.contenido.editable = false
         self.contenido.textAlignment = NSTextAlignment.Left

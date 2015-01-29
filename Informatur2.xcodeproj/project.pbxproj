@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C311F82A1A75067D00A3DA5B /* bombonOrientalCabana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C311F8291A75067D00A3DA5B /* bombonOrientalCabana.jpg */; };
+		C33BF8511A75100E0092CD1D /* contacto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C33BF8501A75100E0092CD1D /* contacto@2x.png */; };
 		C341B0941A71BB2100F9F650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0931A71BB2100F9F650 /* AppDelegate.swift */; };
 		C341B09C1A71BB2100F9F650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C341B09A1A71BB2100F9F650 /* Main.storyboard */; };
 		C341B09E1A71BB2100F9F650 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C341B09D1A71BB2100F9F650 /* Images.xcassets */; };
@@ -16,7 +18,7 @@
 		C341B0C01A71BB5700F9F650 /* DetalleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0B91A71BB5700F9F650 /* DetalleInfo.swift */; };
 		C341B0C11A71BB5700F9F650 /* DetalleServicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */; };
 		C341B0C21A71BB5700F9F650 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BB1A71BB5700F9F650 /* Home.swift */; };
-		C341B0C31A71BB5700F9F650 /* Mapas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BC1A71BB5700F9F650 /* Mapas.swift */; };
+		C341B0C31A71BB5700F9F650 /* MapasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BC1A71BB5700F9F650 /* MapasVC.swift */; };
 		C341B0C41A71BB5700F9F650 /* ServiciosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0BD1A71BB5700F9F650 /* ServiciosVC.swift */; };
 		C341B1791A71C75C00F9F650 /* Informatur2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C341B1781A71C75C00F9F650 /* Informatur2.sqlite */; };
 		C3526AE91A72E318009F4DA7 /* aromaCalafate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526AD11A72E318009F4DA7 /* aromaCalafate.jpg */; };
@@ -52,6 +54,7 @@
 		C3526B171A730D41009F4DA7 /* fono@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3526B161A730D41009F4DA7 /* fono@2x.png */; };
 		C3526B1A1A730E28009F4DA7 /* mail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3526B181A730E28009F4DA7 /* mail@2x.png */; };
 		C3526B1B1A730E28009F4DA7 /* web@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3526B191A730E28009F4DA7 /* web@2x.png */; };
+		C3526B1D1A735691009F4DA7 /* ruta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3526B1C1A735691009F4DA7 /* ruta.jpg */; };
 		C392D42C1A721E30007AA402 /* Informatur2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C392D4231A721E30007AA402 /* Informatur2.xcdatamodeld */; };
 		C392D4651A722D84007AA402 /* ancud.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4311A722D84007AA402 /* ancud.jpg */; };
 		C392D4661A722D84007AA402 /* atractivos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C392D4321A722D84007AA402 /* atractivos.jpg */; };
@@ -111,6 +114,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C311F8291A75067D00A3DA5B /* bombonOrientalCabana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bombonOrientalCabana.jpg; sourceTree = "<group>"; };
+		C33BF8501A75100E0092CD1D /* contacto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contacto@2x.png"; sourceTree = "<group>"; };
 		C341B08E1A71BB2100F9F650 /* Informatur2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Informatur2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C341B0921A71BB2100F9F650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C341B0931A71BB2100F9F650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,7 +129,7 @@
 		C341B0B91A71BB5700F9F650 /* DetalleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleInfo.swift; sourceTree = "<group>"; };
 		C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicios.swift; sourceTree = "<group>"; };
 		C341B0BB1A71BB5700F9F650 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		C341B0BC1A71BB5700F9F650 /* Mapas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapas.swift; sourceTree = "<group>"; };
+		C341B0BC1A71BB5700F9F650 /* MapasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapasVC.swift; sourceTree = "<group>"; };
 		C341B0BD1A71BB5700F9F650 /* ServiciosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosVC.swift; sourceTree = "<group>"; };
 		C341B1681A71BF7200F9F650 /* Informatur2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Informatur2-Bridging-Header.h"; sourceTree = "<group>"; };
 		C341B1781A71C75C00F9F650 /* Informatur2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Informatur2.sqlite; sourceTree = SOURCE_ROOT; };
@@ -166,6 +171,7 @@
 		C3526B161A730D41009F4DA7 /* fono@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fono@2x.png"; sourceTree = "<group>"; };
 		C3526B181A730E28009F4DA7 /* mail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail@2x.png"; sourceTree = "<group>"; };
 		C3526B191A730E28009F4DA7 /* web@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web@2x.png"; sourceTree = "<group>"; };
+		C3526B1C1A735691009F4DA7 /* ruta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ruta.jpg; sourceTree = "<group>"; };
 		C392D4241A721E30007AA402 /* Informatur2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Informatur2.xcdatamodel; sourceTree = "<group>"; };
 		C392D4311A722D84007AA402 /* ancud.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ancud.jpg; sourceTree = "<group>"; };
 		C392D4321A722D84007AA402 /* atractivos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atractivos.jpg; sourceTree = "<group>"; };
@@ -299,7 +305,7 @@
 				C341B0B91A71BB5700F9F650 /* DetalleInfo.swift */,
 				C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */,
 				C341B0BB1A71BB5700F9F650 /* Home.swift */,
-				C341B0BC1A71BB5700F9F650 /* Mapas.swift */,
+				C341B0BC1A71BB5700F9F650 /* MapasVC.swift */,
 				C341B0BD1A71BB5700F9F650 /* ServiciosVC.swift */,
 			);
 			path = Clases;
@@ -308,6 +314,7 @@
 		C3526AD01A72E318009F4DA7 /* Servicios */ = {
 			isa = PBXGroup;
 			children = (
+				C311F8291A75067D00A3DA5B /* bombonOrientalCabana.jpg */,
 				C3526B011A72EA7E009F4DA7 /* chancerel.jpg */,
 				C3526AD11A72E318009F4DA7 /* aromaCalafate.jpg */,
 				C3526AD21A72E318009F4DA7 /* artesaniaPuertoGres.jpg */,
@@ -406,6 +413,7 @@
 		C392D44F1A722D84007AA402 /* Bienvenida */ = {
 			isa = PBXGroup;
 			children = (
+				C3526B1C1A735691009F4DA7 /* ruta.jpg */,
 				C392D4501A722D84007AA402 /* bienvenida.jpg */,
 				C392D4511A722D84007AA402 /* historia.jpg */,
 				C392D4521A722D84007AA402 /* pto.jpg */,
@@ -425,6 +433,7 @@
 		C392D4541A722D84007AA402 /* iconos */ = {
 			isa = PBXGroup;
 			children = (
+				C33BF8501A75100E0092CD1D /* contacto@2x.png */,
 				C3526B181A730E28009F4DA7 /* mail@2x.png */,
 				C3526B191A730E28009F4DA7 /* web@2x.png */,
 				C3526B161A730D41009F4DA7 /* fono@2x.png */,
@@ -544,6 +553,7 @@
 				C392D48E1A722D84007AA402 /* Default-667h@2x.png in Resources */,
 				C392D4871A722D84007AA402 /* home@2x.png in Resources */,
 				C392D47E1A722D84007AA402 /* rioPetrohue.jpg in Resources */,
+				C33BF8511A75100E0092CD1D /* contacto@2x.png in Resources */,
 				C392D4711A722D84007AA402 /* iglesiaSagradoCorazon.jpg in Resources */,
 				C392D4811A722D84007AA402 /* termas.jpg in Resources */,
 				C392D4701A722D84007AA402 /* grutaDeLourdes.jpg in Resources */,
@@ -567,12 +577,14 @@
 				C3526B1A1A730E28009F4DA7 /* mail@2x.png in Resources */,
 				C3526AF41A72E318009F4DA7 /* elRetorno.jpg in Resources */,
 				C392D4901A722D84007AA402 /* Default.png in Resources */,
+				C311F82A1A75067D00A3DA5B /* bombonOrientalCabana.jpg in Resources */,
 				C3526AFD1A72E318009F4DA7 /* puroToro.jpg in Resources */,
 				C392D4881A722D84007AA402 /* hostal@2x.png in Resources */,
 				C392D46F1A722D84007AA402 /* frutillar.jpg in Resources */,
 				C392D4691A722D84007AA402 /* castro.jpg in Resources */,
 				C392D46B1A722D84007AA402 /* cerroCalvario.jpg in Resources */,
 				C392D4731A722D84007AA402 /* lagoLLanquihue.jpg in Resources */,
+				C3526B1D1A735691009F4DA7 /* ruta.jpg in Resources */,
 				C3526B061A72EB5A009F4DA7 /* rentCarDressden.jpg in Resources */,
 				C392D4891A722D84007AA402 /* map@2x.png in Resources */,
 				C392D47B1A722D84007AA402 /* peulla.jpg in Resources */,
@@ -626,7 +638,7 @@
 			files = (
 				C341B0C41A71BB5700F9F650 /* ServiciosVC.swift in Sources */,
 				C392D42C1A721E30007AA402 /* Informatur2.xcdatamodeld in Sources */,
-				C341B0C31A71BB5700F9F650 /* Mapas.swift in Sources */,
+				C341B0C31A71BB5700F9F650 /* MapasVC.swift in Sources */,
 				C3526B121A730000009F4DA7 /* Mapas.m in Sources */,
 				C341B0941A71BB2100F9F650 /* AppDelegate.swift in Sources */,
 				C341B0C01A71BB5700F9F650 /* DetalleInfo.swift in Sources */,
