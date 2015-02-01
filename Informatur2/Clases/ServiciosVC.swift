@@ -39,7 +39,7 @@ class ServiciosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,NS
         fetchRequest.entity = entity
         let sortDescriptor = NSSortDescriptor(key: "tipo", ascending: true)
         let sortDescriptors = [sortDescriptor]
-        let predica = NSPredicate(format: "idioma = %@", "en")
+        let predica = NSPredicate(format: "idioma = %@", "es")
         fetchRequest.predicate = predica
         fetchRequest.sortDescriptors = [sortDescriptor]
         let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext!, sectionNameKeyPath:"tipo", cacheName: nil)

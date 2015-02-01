@@ -101,7 +101,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-512" y="50"/>
+            <point key="canvasLocation" x="-572" y="78"/>
         </scene>
         <!--AtractivosVC-->
         <scene sceneID="atG-Sf-bZB">
@@ -214,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7BC-aC-Za2" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-554" y="-1535"/>
+            <point key="canvasLocation" x="1070" y="-807"/>
         </scene>
         <!--Servicios-->
         <scene sceneID="nTI-Ex-pxT">
@@ -239,7 +239,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3L-4n-64T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-474" y="-606"/>
+            <point key="canvasLocation" x="276" y="-762"/>
         </scene>
         <!--Detalle Servicios-->
         <scene sceneID="Qnd-vF-uWM">
@@ -257,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c83-lf-sqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="-1484"/>
+            <point key="canvasLocation" x="1830" y="-744"/>
         </scene>
     </scenes>
     <resources>

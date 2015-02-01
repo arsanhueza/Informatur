@@ -57,7 +57,10 @@ override func viewDidLoad() {
     
     func ponFotito(){
     
-        self.imagen.frame = CGRectMake(0, 0, self.view.frame.width, 220)
+        var screenAltura = self.view.frame.height/568
+        var imagenValos = screenAltura*220
+        self.imagen.frame = CGRectMake(0, 0, self.view.frame.width, imagenValos)
+        self.imagen.contentMode = .ScaleAspectFill
         self.imagen.image = UIImage(named:self.stringImagen)
         self.scroll.addSubview(self.imagen)
 

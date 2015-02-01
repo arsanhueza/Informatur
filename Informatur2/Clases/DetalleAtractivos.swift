@@ -41,7 +41,9 @@ override func viewDidLoad() {
     
     func ponFotito(){
     
-        self.imagen.frame = CGRectMake(0, 0, self.view.frame.width, 220)
+        var screenAltura = self.view.frame.height/568
+        self.imagen.frame = CGRectMake(0, 0, self.view.frame.width, 220 * screenAltura)
+        self.imagen.contentMode = .ScaleAspectFill
         self.imagen.image = UIImage(named:self.stringImagen)
         self.scroll.addSubview(self.imagen)
 
@@ -49,7 +51,7 @@ override func viewDidLoad() {
     
     func ponTitulengue(){
     
-        self.titulo.frame = CGRectMake(0, 190, self.view.frame.width, 100)
+        self.titulo.frame = CGRectMake(0, self.imagen.frame.height, self.view.frame.width, 60)
         self.titulo.text = self.stringTitulo
         self.titulo.numberOfLines = 2
         self.titulo.textAlignment = NSTextAlignment.Center
@@ -59,7 +61,7 @@ override func viewDidLoad() {
     }
     func ponContenio(){
         
-        self.contenido.frame = CGRectMake(0,self.imagen.frame.height+self.titulo.frame.height-50, self.view.frame.width, 400)
+        self.contenido.frame = CGRectMake(0,self.imagen.frame.height+40, self.view.frame.width, 400)
         self.contenido.text = self.stringContenido
         self.contenido.editable = false
         self.contenido.scrollEnabled = false

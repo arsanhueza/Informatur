@@ -20,14 +20,8 @@ class Home: UIViewController,UITableViewDelegate,UITableViewDataSource,NSFetched
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.foto()
+        self.fotoYTabla()
         self.title = "Home"
-        self.tabla.delegate = self
-        self.tabla.dataSource = self
-        self.tabla.frame = CGRectMake(0, 286, self.view.frame.width, 144)
-        self.tabla.layer.cornerRadius = 3.0
-        self.tabla.scrollEnabled = false
-        self.view.addSubview(self.tabla)
     }
     
     
@@ -59,11 +53,23 @@ class Home: UIViewController,UITableViewDelegate,UITableViewDataSource,NSFetched
     }
     
   
-    func foto(){
+    func fotoYTabla(){
     
-        self.imagen.frame = CGRectMake(0,64, self.view.frame.width, 221)
+        var screenAltura = self.view.frame.height/568
+        var imagenValos = screenAltura*220
+        
+        self.imagen.frame = CGRectMake(0, 64, self.view.frame.width, imagenValos)
+        self.imagen.contentMode = .ScaleAspectFill
         self.imagen.image = UIImage(named:"bienvenida.jpg")
         self.view.addSubview(self.imagen)
+        
+        self.tabla.delegate = self
+        self.tabla.dataSource = self
+        self.tabla.frame = CGRectMake(0, 64 + imagenValos, self.view.frame.width, 144)
+        self.tabla.layer.cornerRadius = 3.0
+        self.tabla.scrollEnabled = false
+        self.view.addSubview(self.tabla)
+
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

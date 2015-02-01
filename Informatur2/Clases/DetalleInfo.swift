@@ -29,22 +29,24 @@ class DetalleInfo: UIViewController,UIScrollViewDelegate {
         self.scroll.frame = self.view.frame
         scroll.contentSize = CGSizeMake(self.view.frame.width,800)
         self.view.addSubview(self.scroll)
-        
+
+        self.ponFotito()
         self.titulengue()
         self.primerContenio()
-        self.ponFotito()
            }
     
     func ponFotito(){
         
-        self.imagen.frame = CGRectMake(0, 0, self.view.frame.width, 220)
+        var screenAltura = self.view.frame.height/568
+        var imagenValos = screenAltura*220
+        self.imagen.frame = CGRectMake(0, 0, self.view.frame.width, imagenValos)
         self.imagen.image = UIImage(named:self.stringImagen)
         self.scroll.addSubview(self.imagen)
         
     }
 
     func titulengue(){
-        self.titulo.frame = CGRectMake(0, 230, self.view.frame.width, 35)
+        self.titulo.frame = CGRectMake(0, self.imagen.frame.height, self.view.frame.width, 35)
         self.titulo.text = self.textoTitulo
         self.titulo.textAlignment = NSTextAlignment.Center
         self.texto.font = UIFont(name: "Helvetica", size: 15)
@@ -52,7 +54,7 @@ class DetalleInfo: UIViewController,UIScrollViewDelegate {
     }
     
     func primerContenio() {
-        self.texto.frame = CGRectMake(15, 280,ancho-30, 520)
+        self.texto.frame = CGRectMake(15, self.imagen.frame.height + self.titulo.frame.height,ancho-30, 520)
         self.texto.scrollEnabled = false
         self.texto.editable = false
         self.texto.textAlignment = NSTextAlignment.Left

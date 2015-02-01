@@ -14,16 +14,11 @@ class AtractivosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,N
     var managedObjectContext: NSManagedObjectContext? = nil
     var _fetchedResultsController: NSFetchedResultsController? = nil
 
-override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "Atractivos"
-        self.tabla.delegate = self
-        self.tabla.dataSource = self
-        self.tabla.frame = CGRectMake(0, self.view.center.y-100, self.view.frame.width, self.view.frame.height-240)
-        self.view.addSubview(self.tabla)
-        self.fotito()
-    }
+        self.fotitoYtabla()
+
+           }
     var fetchedResultsController: NSFetchedResultsController {
         if _fetchedResultsController != nil {
             return _fetchedResultsController!
@@ -51,12 +46,24 @@ override func viewDidLoad() {
         return _fetchedResultsController!
     }
   
-    
-    func fotito(){
-    
-        self.imagen.frame = CGRectMake(0, 64, self.view.frame.width, self.view.frame.height/3)
+    func fotitoYtabla(){
+        
+        var screenAltura = self.view.frame.height/568
+        var imagenValos = screenAltura*220
+        
+        self.imagen.frame = CGRectMake(0, 64, self.view.frame.width, imagenValos)
+        self.imagen.contentMode = .ScaleAspectFill
         self.imagen.image = UIImage(named: "atractivos.jpg")
         self.view.addSubview(self.imagen)
+        
+        
+        self.title = "Atractivos"
+        self.tabla.delegate = self
+        self.tabla.dataSource = self
+        self.tabla.frame = CGRectMake(0, imagenValos+64, self.view.frame.width,self.view.frame.height - (imagenValos + 120))
+       
+        self.view.addSubview(self.tabla)
+
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -107,7 +114,6 @@ override func viewDidLoad() {
             info.stringContenido = atractivo.detalle
             self.navigationController?.pushViewController(info, animated: true)
     }
-
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
