@@ -23,6 +23,8 @@ class AtractivosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,N
         if _fetchedResultsController != nil {
             return _fetchedResultsController!
         }
+        var defolto = NSUserDefaults.standardUserDefaults()
+        let idi = defolto.valueForKey("idioma") as NSString
         let fetchRequest = NSFetchRequest()
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         self.managedObjectContext = appDelegate.managedObjectContext
@@ -31,7 +33,7 @@ class AtractivosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,N
         fetchRequest.entity = entity
         let sortDescriptor = NSSortDescriptor(key: "tipo", ascending: true)
         let sortDescriptors = [sortDescriptor]
-        let predica = NSPredicate(format: "idioma = %@", "es")
+        let predica = NSPredicate(format: "idioma = %@", idi)
         fetchRequest.predicate = predica
         
         fetchRequest.sortDescriptors = [sortDescriptor]
@@ -56,12 +58,10 @@ class AtractivosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,N
         self.imagen.image = UIImage(named: "atractivos.jpg")
         self.view.addSubview(self.imagen)
         
-        
         self.title = "Atractivos"
         self.tabla.delegate = self
         self.tabla.dataSource = self
         self.tabla.frame = CGRectMake(0, imagenValos+64, self.view.frame.width,self.view.frame.height - (imagenValos + 120))
-       
         self.view.addSubview(self.tabla)
 
     }

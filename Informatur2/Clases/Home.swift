@@ -29,6 +29,9 @@ class Home: UIViewController,UITableViewDelegate,UITableViewDataSource,NSFetched
         if _fetchedResultsController != nil {
             return _fetchedResultsController!
         }
+        var defolto = NSUserDefaults.standardUserDefaults()
+        let idi = defolto.valueForKey("idioma") as NSString
+
         let fetchRequest = NSFetchRequest()
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         self.managedObjectContext = appDelegate.managedObjectContext
@@ -37,7 +40,7 @@ class Home: UIViewController,UITableViewDelegate,UITableViewDataSource,NSFetched
         fetchRequest.entity = entity
         let sortDescriptor = NSSortDescriptor(key: "titulo", ascending: true)
         let sortDescriptors = [sortDescriptor]
-        let predica = NSPredicate(format: "idioma = %@", "es")
+        let predica = NSPredicate(format: "idioma = %@", idi)
         fetchRequest.predicate = predica
 
         fetchRequest.sortDescriptors = [sortDescriptor]

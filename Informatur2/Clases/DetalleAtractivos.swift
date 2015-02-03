@@ -18,7 +18,6 @@ class DetalleAtractivos: UIViewController,UIScrollViewDelegate {
     var titulo = UILabel()
     var contenido = UITextView()
     
-
     var stringTitulo :NSString!
     var stringContenido :NSString!
     var stringImagen :NSString!
@@ -29,14 +28,13 @@ override func viewDidLoad() {
     self.alto = self.view.frame.height
     self.scroll.delegate = self
     self.scroll.frame = self.view.frame
-    scroll.contentSize = CGSizeMake(self.view.frame.width,800)
+    self.scroll.contentSize = CGSizeMake(self.view.frame.width,0)
     self.view.addSubview(self.scroll)
-
     
     self.ponFotito()
     self.ponTitulengue()
     self.ponContenio()
-    
+
     }
     
     func ponFotito(){
@@ -56,18 +54,24 @@ override func viewDidLoad() {
         self.titulo.numberOfLines = 2
         self.titulo.textAlignment = NSTextAlignment.Center
         self.titulo.font = UIFont(name: "Helvetica", size: 15)
-
+//Revise
+//        self.titulo.sizeToFit()
+//        self.titulo.layoutIfNeeded()
+        
         self.scroll.addSubview(self.titulo)
     }
     func ponContenio(){
         
-        self.contenido.frame = CGRectMake(0,self.imagen.frame.height+40, self.view.frame.width, 400)
+        self.contenido.frame = CGRectMake(15,self.imagen.frame.height+40, self.view.frame.width-30, 0)
         self.contenido.text = self.stringContenido
         self.contenido.editable = false
         self.contenido.scrollEnabled = false
         self.contenido.textAlignment = NSTextAlignment.Left
         self.contenido.font = UIFont(name: "Helvetica", size: 13)
-        
+        self.contenido.sizeToFit()
+        self.contenido.layoutIfNeeded()
+        self.scroll.contentSize = CGSizeMake(self.view.frame.width,self.imagen.frame.height+40 + self.contenido.bounds.height)
+
         self.scroll.addSubview(self.contenido)
     }
 

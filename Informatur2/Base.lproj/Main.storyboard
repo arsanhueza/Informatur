@@ -97,6 +97,7 @@
                         <segue destination="E6D-Wf-Rml" kind="relationship" relationship="viewControllers" id="cwi-hv-Byn"/>
                         <segue destination="7An-qx-8ze" kind="relationship" relationship="viewControllers" id="qq2-gH-kJC"/>
                         <segue destination="Vgd-L8-GHo" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="Wsq-et-T3n" kind="relationship" relationship="viewControllers" id="bgQ-tN-p9f"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -122,11 +123,11 @@
             </objects>
             <point key="canvasLocation" x="-874" y="1802"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="IJG-Hp-UYQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MR9-dz-r0Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="home.png" id="bub-ve-kMF"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="bub-ve-kMF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="myn-wR-hTH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -147,11 +148,11 @@
             </objects>
             <point key="canvasLocation" x="276" y="42"/>
         </scene>
-        <!--Atractivos-->
+        <!--Tourist Attractions-->
         <scene sceneID="piN-GF-r9w">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E6D-Wf-Rml" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Atractivos" image="tranking.png" id="njO-MY-w8d"/>
+                    <tabBarItem key="tabBarItem" title="Tourist Attractions" image="tranking.png" id="njO-MY-w8d"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Qt-wH-Msy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -172,11 +173,11 @@
             </objects>
             <point key="canvasLocation" x="-874" y="1018"/>
         </scene>
-        <!--Map-->
+        <!--Places-->
         <scene sceneID="fvY-3V-Aml">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vgd-L8-GHo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" image="map.png" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Places" image="map.png" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mWN-xm-a4v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -214,13 +215,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7BC-aC-Za2" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="-807"/>
+            <point key="canvasLocation" x="1066" y="-762"/>
         </scene>
-        <!--Servicios-->
+        <!--Services-->
         <scene sceneID="nTI-Ex-pxT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7An-qx-8ze" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Servicios" image="survey.png" id="HtS-hi-gu5"/>
+                    <tabBarItem key="tabBarItem" title="Services" image="survey.png" id="HtS-hi-gu5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="idi-tD-wzf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -259,8 +260,53 @@
             </objects>
             <point key="canvasLocation" x="1830" y="-744"/>
         </scene>
+        <!--About-->
+        <scene sceneID="3cd-eC-T6v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wsq-et-T3n" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="about.png" id="MWM-uK-i2D"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i7J-XP-dGA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.846193321" green="0.56248355559999996" blue="0.13466539299999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.2239857509" blue="6.856736774e-05" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.97156816319999995" green="0.64582300680000004" blue="0.1546178695" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="32T-i4-U6Z" kind="relationship" relationship="rootViewController" id="S09-lg-AAM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rer-Dv-foh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1584" y="1038"/>
+        </scene>
+        <!--AcercaVC-->
+        <scene sceneID="Gbn-t5-ftb">
+            <objects>
+                <viewController id="32T-i4-U6Z" customClass="AcercaVC" customModule="Informatur2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y2h-tt-wPp"/>
+                        <viewControllerLayoutGuide type="bottom" id="aGb-fD-jcC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q1j-Mk-GfK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cyc-xI-ymj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zij-JO-Rmh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1578" y="1802"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="about.png" width="25" height="25"/>
         <image name="first" width="30" height="30"/>
         <image name="home.png" width="25" height="25"/>
         <image name="map.png" width="25" height="25"/>

@@ -27,7 +27,7 @@ class DetalleInfo: UIViewController,UIScrollViewDelegate {
         self.alto = self.view.frame.height
         self.scroll.delegate = self
         self.scroll.frame = self.view.frame
-        scroll.contentSize = CGSizeMake(self.view.frame.width,800)
+        scroll.contentSize = CGSizeMake(self.view.frame.width,0)
         self.view.addSubview(self.scroll)
 
         self.ponFotito()
@@ -54,19 +54,23 @@ class DetalleInfo: UIViewController,UIScrollViewDelegate {
     }
     
     func primerContenio() {
-        self.texto.frame = CGRectMake(15, self.imagen.frame.height + self.titulo.frame.height,ancho-30, 520)
+        var porte = self.imagen.frame.height + self.titulo.frame.height
+        self.texto.frame = CGRectMake(15, porte,ancho-30, 0)
         self.texto.scrollEnabled = false
         self.texto.editable = false
         self.texto.textAlignment = NSTextAlignment.Left
         self.texto.font = UIFont(name: "Helvetica", size: 13)
         
         var attributedString = NSMutableAttributedString(string:self.descripcion)
-        
         attributedString.addAttribute(NSKernAttributeName, value:1.4,range:(NSMakeRange(0,500)))
-
         self.texto.text = attributedString.string
-    
+        self.texto.sizeToFit()
+        self.texto.layoutIfNeeded()
+        
         self.scroll.addSubview(self.texto)
+        self.scroll.contentSize = CGSizeMake(self.view.frame.width,porte+self.texto.bounds.height)
+        
+
     }
 
     override func didReceiveMemoryWarning() {

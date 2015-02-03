@@ -31,6 +31,9 @@ class ServiciosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,NS
         if _fetchedResultsController != nil {
             return _fetchedResultsController!
         }
+        var defolto = NSUserDefaults.standardUserDefaults()
+        let idi = defolto.valueForKey("idioma") as NSString
+
         let fetchRequest = NSFetchRequest()
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         self.managedObjectContext = appDelegate.managedObjectContext
@@ -39,7 +42,7 @@ class ServiciosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,NS
         fetchRequest.entity = entity
         let sortDescriptor = NSSortDescriptor(key: "tipo", ascending: true)
         let sortDescriptors = [sortDescriptor]
-        let predica = NSPredicate(format: "idioma = %@", "es")
+        let predica = NSPredicate(format: "idioma = %@", idi)
         fetchRequest.predicate = predica
         fetchRequest.sortDescriptors = [sortDescriptor]
         let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext!, sectionNameKeyPath:"tipo", cacheName: nil)
@@ -107,7 +110,6 @@ class ServiciosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,NS
         let servicio = self.fetchedResultsController.objectAtIndexPath(indexPath) as Servicios
 
         info.stringImagen = servicio.foto
-
         info.stringTitulo = servicio.nombre
         info.stringWeb = servicio.web
         info.stringMail = servicio.mail

@@ -21,11 +21,10 @@ class DetalleServicios: UIViewController,UIScrollViewDelegate {
     var imagenWeb = UIImageView()
 
     var titulo = UILabel()
-    var web = UILabel()
-    var mail = UILabel()
-    var fono = UILabel()
-
-
+    var web = UITextView()
+    var mail = UITextView()
+    var fono = UITextView()
+    
     var contenido = UITextView()
 
     var stringTitulo :NSString!
@@ -41,7 +40,7 @@ override func viewDidLoad() {
     self.alto = self.view.frame.height
     self.scroll.delegate = self
     self.scroll.frame = self.view.frame
-    scroll.contentSize = CGSizeMake(self.view.frame.width,800)
+    scroll.contentSize = CGSizeMake(self.view.frame.width,0)
     self.view.addSubview(self.scroll)
 
     
@@ -51,9 +50,7 @@ override func viewDidLoad() {
     self.ponMail()
     self.ponFono()
     self.ponContenio()
-
-    
-    }
+}
     
     func ponFotito(){
     
@@ -68,7 +65,8 @@ override func viewDidLoad() {
     
     func ponTitulengue(){
     
-        self.titulo.frame = CGRectMake(20, self.imagen.frame.height, self.view.frame.width, 60)
+        
+        self.titulo.frame = CGRectMake(40, self.imagen.frame.height, self.view.frame.width, 60)
         self.titulo.text = self.stringTitulo
         self.titulo.numberOfLines = 2
         self.titulo.textAlignment = NSTextAlignment.Left
@@ -80,11 +78,17 @@ override func viewDidLoad() {
     
     func ponWeb(){
         
-        self.web.frame = CGRectMake(40, self.titulo.center.y+30, self.view.frame.width-40, 30)
+         var altura = self.imagen.bounds.size.height + self.titulo.bounds.size.height
+        
+        self.web.frame = CGRectMake(40, altura, self.scroll.frame.width, 0)
         self.web.text = self.stringWeb
-        self.web.numberOfLines = 2
         self.web.textAlignment = NSTextAlignment.Left
         self.web.font = UIFont(name: "Helvetica", size: 13)
+        self.web.sizeToFit()
+        self.web.layoutIfNeeded()
+        self.web.editable = false
+        self.web.scrollEnabled = false
+        self.web.dataDetectorTypes = .Link
         
         self.imagenWeb.frame = CGRectMake(5, self.web.frame.origin.y, 30, 30)
         self.imagenWeb.image = UIImage(named: "web.png")
@@ -95,11 +99,18 @@ override func viewDidLoad() {
 
     func ponMail(){
         
-        self.mail.frame = CGRectMake(40, self.web.center.y+30, self.view.frame.width-40, 30)
+        var altura = self.imagen.bounds.size.height + self.titulo.bounds.size.height + self.web.bounds.height
+
+        
+        self.mail.frame = CGRectMake(40, altura, self.scroll.frame.width, 0)
         self.mail.text = self.stringMail
-        self.mail.numberOfLines = 2
         self.mail.textAlignment = NSTextAlignment.Left
         self.mail.font = UIFont(name: "Helvetica", size: 13)
+        self.mail.sizeToFit()
+        self.mail.layoutIfNeeded()
+        self.mail.editable = false
+        self.mail.scrollEnabled = false
+        self.mail.dataDetectorTypes = .All
         self.imagenMail.frame = CGRectMake(5, self.mail.frame.origin.y, 30, 30)
         self.imagenMail.image = UIImage(named: "mail.png")
         self.scroll.addSubview(self.imagenMail)
@@ -108,11 +119,16 @@ override func viewDidLoad() {
 //
     func ponFono(){
         
-        self.fono.frame = CGRectMake(40,self.mail.center.y+30, self.view.frame.width-40, 30)
+        var altura = self.imagen.bounds.size.height + self.titulo.bounds.size.height + self.web.bounds.height + self.mail.bounds.height
+
+        self.fono.frame = CGRectMake(40,altura, 0, 0)
         self.fono.text = self.stringFono
-        self.fono.numberOfLines = 2
         self.fono.textAlignment = NSTextAlignment.Left
         self.fono.font = UIFont(name: "Helvetica", size: 13)
+        self.fono.sizeToFit()
+        self.fono.layoutIfNeeded()
+        self.fono.scrollEnabled = false
+        self.fono.editable = false
         
         self.imagenFono.frame = CGRectMake(5, self.fono.frame.origin.y, 30, 30)
         self.imagenFono.image = UIImage(named: "contacto.png")
@@ -124,15 +140,20 @@ override func viewDidLoad() {
     
     func ponContenio(){
         
-        self.contenido.frame = CGRectMake(20,self.fono.center.y+30, self.view.frame.width-20, 300)
+        var altura = self.imagen.bounds.size.height + self.titulo.bounds.size.height + self.web.bounds.height + self.mail.bounds.height + self.fono.bounds.height + self.contenido.bounds.height
+        
+        self.contenido.frame = CGRectMake(20,altura, self.view.frame.width-20, 0)
         self.contenido.text = self.stringContenido
         self.contenido.editable = false
+        self.contenido.scrollEnabled = false
         self.contenido.textAlignment = NSTextAlignment.Left
         self.contenido.font = UIFont(name: "Helvetica", size: 13)
-        
-        
-        
+        self.contenido.sizeToFit()
+        self.contenido.layoutIfNeeded()
+
         self.scroll.addSubview(self.contenido)
+        scroll.contentSize = CGSizeMake(self.view.frame.width,self.imagen.bounds.size.height + self.titulo.bounds.size.height + self.web.bounds.height + self.mail.bounds.height + self.fono.bounds.height + self.contenido.bounds.height+20)
+
     }
 
 }

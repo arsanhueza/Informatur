@@ -16,11 +16,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+       self.idioma()
         NSThread.sleepForTimeInterval(3.0)
-                
+        
         return true
     }
+    func idioma(){
+    
+        var defolto = NSUserDefaults.standardUserDefaults()
+        var pre = NSLocale.preferredLanguages()[0] as NSString
+        
+        if pre.containsString("en"){
+        
+            defolto.setObject("es", forKey: "idioma")
+        }
+        else if pre.containsString("es"){
+        
+            defolto.setObject("es", forKey: "idioma")
+            
+        }
+        else if pre.containsString("pt"){
+        
+            defolto.setObject("pt", forKey: "idioma")
+            
+        }
+        else{
+            defolto.setObject("en", forKey: "idioma")
+            
+        }
+        defolto.synchronize()
 
+        println(pre)
+    }
+    
       func applicationWillTerminate(application: UIApplication) {
         self.saveContext()
     }

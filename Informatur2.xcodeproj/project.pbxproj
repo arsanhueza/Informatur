@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C311F82A1A75067D00A3DA5B /* bombonOrientalCabana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C311F8291A75067D00A3DA5B /* bombonOrientalCabana.jpg */; };
+		C318185A1A80998000FC6747 /* AcercaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31818591A80998000FC6747 /* AcercaVC.swift */; };
+		C318185E1A809BD700FC6747 /* about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C318185D1A809BD700FC6747 /* about@2x.png */; };
 		C33BF8511A75100E0092CD1D /* contacto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C33BF8501A75100E0092CD1D /* contacto@2x.png */; };
 		C341B0941A71BB2100F9F650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0931A71BB2100F9F650 /* AppDelegate.swift */; };
 		C341B09C1A71BB2100F9F650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C341B09A1A71BB2100F9F650 /* Main.storyboard */; };
@@ -115,6 +117,10 @@
 
 /* Begin PBXFileReference section */
 		C311F8291A75067D00A3DA5B /* bombonOrientalCabana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bombonOrientalCabana.jpg; sourceTree = "<group>"; };
+		C31818591A80998000FC6747 /* AcercaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaVC.swift; sourceTree = "<group>"; };
+		C318185B1A809A1100FC6747 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		C318185C1A809A2400FC6747 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
+		C318185D1A809BD700FC6747 /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about@2x.png"; sourceTree = "<group>"; };
 		C33BF8501A75100E0092CD1D /* contacto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contacto@2x.png"; sourceTree = "<group>"; };
 		C341B08E1A71BB2100F9F650 /* Informatur2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Informatur2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C341B0921A71BB2100F9F650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -301,12 +307,13 @@
 			isa = PBXGroup;
 			children = (
 				C341B0B71A71BB5700F9F650 /* AtractivosVC.swift */,
-				C341B0B81A71BB5700F9F650 /* DetalleAtractivos.swift */,
-				C341B0B91A71BB5700F9F650 /* DetalleInfo.swift */,
-				C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */,
 				C341B0BB1A71BB5700F9F650 /* Home.swift */,
 				C341B0BC1A71BB5700F9F650 /* MapasVC.swift */,
 				C341B0BD1A71BB5700F9F650 /* ServiciosVC.swift */,
+				C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */,
+				C341B0B81A71BB5700F9F650 /* DetalleAtractivos.swift */,
+				C341B0B91A71BB5700F9F650 /* DetalleInfo.swift */,
+				C31818591A80998000FC6747 /* AcercaVC.swift */,
 			);
 			path = Clases;
 			sourceTree = "<group>";
@@ -433,6 +440,7 @@
 		C392D4541A722D84007AA402 /* iconos */ = {
 			isa = PBXGroup;
 			children = (
+				C318185D1A809BD700FC6747 /* about@2x.png */,
 				C33BF8501A75100E0092CD1D /* contacto@2x.png */,
 				C3526B181A730E28009F4DA7 /* mail@2x.png */,
 				C3526B191A730E28009F4DA7 /* web@2x.png */,
@@ -608,6 +616,7 @@
 				C392D4651A722D84007AA402 /* ancud.jpg in Resources */,
 				C3526AEF1A72E318009F4DA7 /* cabanasZajay.jpg in Resources */,
 				C392D48F1A722D84007AA402 /* Default-Portrait-736h@3x.png in Resources */,
+				C318185E1A809BD700FC6747 /* about@2x.png in Resources */,
 				C3526AF21A72E318009F4DA7 /* eloiaBistro.jpg in Resources */,
 				C3526AEE1A72E318009F4DA7 /* cabanasRioLodge.jpg in Resources */,
 				C392D4781A722D84007AA402 /* navegacionLacustre.jpg in Resources */,
@@ -643,6 +652,7 @@
 				C341B0941A71BB2100F9F650 /* AppDelegate.swift in Sources */,
 				C341B0C01A71BB5700F9F650 /* DetalleInfo.swift in Sources */,
 				C3526B0F1A730000009F4DA7 /* Info.m in Sources */,
+				C318185A1A80998000FC6747 /* AcercaVC.swift in Sources */,
 				C341B0BF1A71BB5700F9F650 /* DetalleAtractivos.swift in Sources */,
 				C3526B0C1A730000009F4DA7 /* Bienvenida.m in Sources */,
 				C3526B151A730000009F4DA7 /* Servicios.m in Sources */,
@@ -676,6 +686,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C341B09B1A71BB2100F9F650 /* Base */,
+				C318185B1A809A1100FC6747 /* es */,
+				C318185C1A809A2400FC6747 /* pt */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

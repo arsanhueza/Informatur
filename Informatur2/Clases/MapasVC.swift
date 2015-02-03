@@ -15,13 +15,15 @@ var mapa = MKMapView()
 
     override func viewDidLoad() {
         
-        
+        var defolto = NSUserDefaults.standardUserDefaults()
+        let idi = defolto.valueForKey("idioma") as NSString
+
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         self.managedObjectContext = appDelegate.managedObjectContext
         
         var error: NSError? = nil
         var fReq: NSFetchRequest = NSFetchRequest(entityName: "Mapas")
-        fReq.predicate = NSPredicate(format: "idioma = %@", "es")
+        fReq.predicate = NSPredicate(format: "idioma = %@", idi)
         var sorter: NSSortDescriptor = NSSortDescriptor(key: "nombre" , ascending: false)
         fReq.sortDescriptors = [sorter]
         fReq.returnsObjectsAsFaults = false
