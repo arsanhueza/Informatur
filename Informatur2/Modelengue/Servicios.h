@@ -21,7 +21,6 @@
 @property (nonatomic, retain) NSString * nombre;
 @property (nonatomic, retain) NSString * tipo;
 @property (nonatomic, retain) NSString * web;
-//@property (nonatomic, retain) NSString * contenido;
 @property (nonatomic, retain) Mapas *mapa;
 
 @end

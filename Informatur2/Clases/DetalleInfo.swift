@@ -54,16 +54,17 @@ class DetalleInfo: UIViewController,UIScrollViewDelegate {
     }
     
     func primerContenio() {
+        
         var porte = self.imagen.frame.height + self.titulo.frame.height
         self.texto.frame = CGRectMake(15, porte,ancho-30, 0)
         self.texto.scrollEnabled = false
         self.texto.editable = false
         self.texto.textAlignment = NSTextAlignment.Left
+        var style = NSMutableParagraphStyle()
+        style.lineSpacing = 6
+        let attributes = [NSParagraphStyleAttributeName : style]
+        self.texto.attributedText = NSAttributedString(string: self.descripcion, attributes:attributes)
         self.texto.font = UIFont(name: "Helvetica", size: 13)
-        
-        var attributedString = NSMutableAttributedString(string:self.descripcion)
-        attributedString.addAttribute(NSKernAttributeName, value:1.4,range:(NSMakeRange(0,500)))
-        self.texto.text = attributedString.string
         self.texto.sizeToFit()
         self.texto.layoutIfNeeded()
         

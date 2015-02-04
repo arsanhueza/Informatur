@@ -18,7 +18,7 @@ class ServiciosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,NS
 
     override func viewDidLoad() {
         
-    self.title = "Servicios"
+        self.title = NSLocalizedString("Services", comment: "")
     
     self.tabla.delegate = self
     self.tabla.dataSource = self
@@ -86,16 +86,13 @@ class ServiciosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,NS
 
         cell!.textLabel!.text = servicio.nombre
         
-        if(indexPath.section == 0){
+        if(servicio.tipo == "Lodging" || servicio.tipo == "Alojamiento" || servicio.tipo == "Hospedagem"){
             cell?.imageView?.image = UIImage(named: "hostal.png")
 
-        
         }
-      else if(indexPath.section == 1){
+      else if(servicio.tipo == "Others" || servicio.tipo == "Otros" || servicio.tipo == "Outros"){
             
             cell?.imageView?.image = UIImage(named: "otros.png")
-            
-            
         }
         else{
         

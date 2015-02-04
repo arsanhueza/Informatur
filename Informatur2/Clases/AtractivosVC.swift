@@ -58,7 +58,7 @@ class AtractivosVC: UIViewController,UITableViewDelegate,UITableViewDataSource,N
         self.imagen.image = UIImage(named: "atractivos.jpg")
         self.view.addSubview(self.imagen)
         
-        self.title = "Atractivos"
+        self.title = NSLocalizedString("Atractivos", comment: "")
         self.tabla.delegate = self
         self.tabla.dataSource = self
         self.tabla.frame = CGRectMake(0, imagenValos+64, self.view.frame.width,self.view.frame.height - (imagenValos + 120))

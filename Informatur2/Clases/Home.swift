@@ -21,7 +21,7 @@ class Home: UIViewController,UITableViewDelegate,UITableViewDataSource,NSFetched
     override func viewDidLoad() {
         super.viewDidLoad()
         self.fotoYTabla()
-        self.title = "Home"
+        self.title = NSLocalizedString("Home", comment: "")
     }
     
     

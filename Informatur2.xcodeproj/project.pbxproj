@@ -10,6 +10,9 @@
 		C311F82A1A75067D00A3DA5B /* bombonOrientalCabana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C311F8291A75067D00A3DA5B /* bombonOrientalCabana.jpg */; };
 		C318185A1A80998000FC6747 /* AcercaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31818591A80998000FC6747 /* AcercaVC.swift */; };
 		C318185E1A809BD700FC6747 /* about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C318185D1A809BD700FC6747 /* about@2x.png */; };
+		C31818651A80A09100FC6747 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C31818671A80A09100FC6747 /* Localizable.strings */; };
+		C31CC8CF1A8239260092FDEE /* info1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C31CC8CC1A8239260092FDEE /* info1@2x.jpg */; };
+		C31CC8D31A82478F0092FDEE /* farmacia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C31CC8D21A82478F0092FDEE /* farmacia.jpg */; };
 		C33BF8511A75100E0092CD1D /* contacto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C33BF8501A75100E0092CD1D /* contacto@2x.png */; };
 		C341B0941A71BB2100F9F650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341B0931A71BB2100F9F650 /* AppDelegate.swift */; };
 		C341B09C1A71BB2100F9F650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C341B09A1A71BB2100F9F650 /* Main.storyboard */; };
@@ -118,9 +121,16 @@
 /* Begin PBXFileReference section */
 		C311F8291A75067D00A3DA5B /* bombonOrientalCabana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bombonOrientalCabana.jpg; sourceTree = "<group>"; };
 		C31818591A80998000FC6747 /* AcercaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaVC.swift; sourceTree = "<group>"; };
-		C318185B1A809A1100FC6747 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		C318185C1A809A2400FC6747 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
 		C318185D1A809BD700FC6747 /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about@2x.png"; sourceTree = "<group>"; };
+		C31818601A809CE700FC6747 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C31818611A809CEC00FC6747 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		C31818621A809CFA00FC6747 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
+		C31818661A80A09100FC6747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C31818681A80A09A00FC6747 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C31818691A80A09C00FC6747 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C318186A1A80A09C00FC6747 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C31CC8CC1A8239260092FDEE /* info1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "info1@2x.jpg"; sourceTree = "<group>"; };
+		C31CC8D21A82478F0092FDEE /* farmacia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = farmacia.jpg; sourceTree = "<group>"; };
 		C33BF8501A75100E0092CD1D /* contacto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contacto@2x.png"; sourceTree = "<group>"; };
 		C341B08E1A71BB2100F9F650 /* Informatur2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Informatur2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C341B0921A71BB2100F9F650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -282,6 +292,7 @@
 				C341B1781A71C75C00F9F650 /* Informatur2.sqlite */,
 				C341B1681A71BF7200F9F650 /* Informatur2-Bridging-Header.h */,
 				C341B0921A71BB2100F9F650 /* Info.plist */,
+				C31818671A80A09100FC6747 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -310,10 +321,10 @@
 				C341B0BB1A71BB5700F9F650 /* Home.swift */,
 				C341B0BC1A71BB5700F9F650 /* MapasVC.swift */,
 				C341B0BD1A71BB5700F9F650 /* ServiciosVC.swift */,
+				C31818591A80998000FC6747 /* AcercaVC.swift */,
 				C341B0BA1A71BB5700F9F650 /* DetalleServicios.swift */,
 				C341B0B81A71BB5700F9F650 /* DetalleAtractivos.swift */,
 				C341B0B91A71BB5700F9F650 /* DetalleInfo.swift */,
-				C31818591A80998000FC6747 /* AcercaVC.swift */,
 			);
 			path = Clases;
 			sourceTree = "<group>";
@@ -321,6 +332,7 @@
 		C3526AD01A72E318009F4DA7 /* Servicios */ = {
 			isa = PBXGroup;
 			children = (
+				C31CC8D21A82478F0092FDEE /* farmacia.jpg */,
 				C311F8291A75067D00A3DA5B /* bombonOrientalCabana.jpg */,
 				C3526B011A72EA7E009F4DA7 /* chancerel.jpg */,
 				C3526AD11A72E318009F4DA7 /* aromaCalafate.jpg */,
@@ -372,6 +384,7 @@
 		C392D42F1A722D84007AA402 /* fotitos */ = {
 			isa = PBXGroup;
 			children = (
+				C31CC8CC1A8239260092FDEE /* info1@2x.jpg */,
 				C3526AD01A72E318009F4DA7 /* Servicios */,
 				C392D4301A722D84007AA402 /* Atractivos */,
 				C392D44F1A722D84007AA402 /* Bienvenida */,
@@ -529,8 +542,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
+				es,
+				pt,
 			);
 			mainGroup = C341B0851A71BB2100F9F650;
 			productRefGroup = C341B08F1A71BB2100F9F650 /* Products */;
@@ -552,6 +567,7 @@
 				C392D4911A722D84007AA402 /* Default@2x.png in Resources */,
 				C3526AF11A72E318009F4DA7 /* deinHouse.jpg in Resources */,
 				C341B1791A71C75C00F9F650 /* Informatur2.sqlite in Resources */,
+				C31818651A80A09100FC6747 /* Localizable.strings in Resources */,
 				C392D48D1A722D84007AA402 /* Default-568h@2x.png in Resources */,
 				C3526B041A72EB4B009F4DA7 /* cafeMamusia.jpg in Resources */,
 				C3526AF91A72E318009F4DA7 /* hostalTantePuppe.jpg in Resources */,
@@ -570,6 +586,7 @@
 				C392D4831A722D84007AA402 /* bienvenida.jpg in Resources */,
 				C3526AE91A72E318009F4DA7 /* aromaCalafate.jpg in Resources */,
 				C3526AEA1A72E318009F4DA7 /* artesaniaPuertoGres.jpg in Resources */,
+				C31CC8D31A82478F0092FDEE /* farmacia.jpg in Resources */,
 				C392D46E1A722D84007AA402 /* feriaArtesanal.jpg in Resources */,
 				C392D4861A722D84007AA402 /* comida@2x.png in Resources */,
 				C3526AED1A72E318009F4DA7 /* cabanasPuertoVaras.jpg in Resources */,
@@ -608,6 +625,7 @@
 				C3526AF01A72E318009F4DA7 /* cafeHaussmann.jpg in Resources */,
 				C3526AF51A72E318009F4DA7 /* guaton.jpg in Resources */,
 				C392D47F1A722D84007AA402 /* saltosDelPetrohue.jpg in Resources */,
+				C31CC8CF1A8239260092FDEE /* info1@2x.jpg in Resources */,
 				C392D47D1A722D84007AA402 /* ralun.jpg in Resources */,
 				C392D4791A722D84007AA402 /* parqueNacionalVicente.jpg in Resources */,
 				C392D4751A722D84007AA402 /* lagunaVerde.jpg in Resources */,
@@ -682,12 +700,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C31818671A80A09100FC6747 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C31818661A80A09100FC6747 /* Base */,
+				C31818681A80A09A00FC6747 /* en */,
+				C31818691A80A09C00FC6747 /* es */,
+				C318186A1A80A09C00FC6747 /* pt */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C341B09A1A71BB2100F9F650 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C341B09B1A71BB2100F9F650 /* Base */,
-				C318185B1A809A1100FC6747 /* es */,
-				C318185C1A809A2400FC6747 /* pt */,
+				C31818601A809CE700FC6747 /* en */,
+				C31818611A809CEC00FC6747 /* es */,
+				C31818621A809CFA00FC6747 /* pt */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

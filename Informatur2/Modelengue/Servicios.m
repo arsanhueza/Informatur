@@ -20,7 +20,6 @@
 @dynamic nombre;
 @dynamic tipo;
 @dynamic web;
-//@dynamic contenido;
 @dynamic mapa;
 
 @end

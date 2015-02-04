@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-       self.idioma()
+              self.idioma()
         NSThread.sleepForTimeInterval(3.0)
         
         return true
@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if pre.containsString("en"){
         
-            defolto.setObject("es", forKey: "idioma")
+            defolto.setObject("en", forKey: "idioma")
         }
         else if pre.containsString("es"){
         
@@ -65,27 +65,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let modelURL = NSBundle.mainBundle().URLForResource("Informatur2", withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
-
-    lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator? = {
-        var coordinator: NSPersistentStoreCoordinator? = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        
     
-        var path = NSBundle.mainBundle().pathForResource("Informatur2", ofType: "sqlite")
+    lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator? = {
+      
+        var coordinator: NSPersistentStoreCoordinator? = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("Informatur2.sqlite")
+    
+        
+        if(!NSFileManager.defaultManager().fileExistsAtPath(url.path!)){
+           
+            var preloadUrl = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("Informatur2", ofType: "sqlite")!)
+            
+            
+            var err: NSError? = nil
+            
+            if(!NSFileManager.defaultManager().copyItemAtURL(preloadUrl!, toURL: url, error: &err)){
 
-        var url = NSURL(fileURLWithPath: path!)
+                println("Buta la huea")
+
+            }
+        }
+        
         var error: NSError? = nil
         var failureReason = "There was an error creating or loading the application's saved data."
-        
-        
         if coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil, error: &error) == nil {
             coordinator = nil
-            // Report any error we got.
             let dict = NSMutableDictionary()
             dict[NSLocalizedDescriptionKey] = "Failed to initialize the application's saved data"
             dict[NSLocalizedFailureReasonErrorKey] = failureReason
             dict[NSUnderlyingErrorKey] = error
             error = NSError(domain: "YOUR_ERROR_DOMAIN", code: 9999, userInfo: dict)
-           
+            // Replace this with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             NSLog("Unresolved error \(error), \(error!.userInfo)")
             abort()
         }

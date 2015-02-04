@@ -49,21 +49,22 @@ override func viewDidLoad() {
     
     func ponTitulengue(){
     
-        self.titulo.frame = CGRectMake(0, self.imagen.frame.height, self.view.frame.width, 60)
+        self.titulo.frame = CGRectMake(0, self.imagen.frame.height+10, self.view.frame.width-15, 40)
         self.titulo.text = self.stringTitulo
         self.titulo.numberOfLines = 2
         self.titulo.textAlignment = NSTextAlignment.Center
         self.titulo.font = UIFont(name: "Helvetica", size: 15)
-//Revise
-//        self.titulo.sizeToFit()
-//        self.titulo.layoutIfNeeded()
-        
+
         self.scroll.addSubview(self.titulo)
     }
     func ponContenio(){
         
-        self.contenido.frame = CGRectMake(15,self.imagen.frame.height+40, self.view.frame.width-30, 0)
-        self.contenido.text = self.stringContenido
+        self.contenido.frame = CGRectMake(15,self.imagen.frame.height+40, self.view.frame.width-15, 0)
+        var style = NSMutableParagraphStyle()
+        style.lineSpacing = 6
+        let attributes = [NSParagraphStyleAttributeName : style]
+        self.contenido.attributedText = NSAttributedString(string: self.stringContenido, attributes:attributes)
+    
         self.contenido.editable = false
         self.contenido.scrollEnabled = false
         self.contenido.textAlignment = NSTextAlignment.Left
@@ -71,7 +72,6 @@ override func viewDidLoad() {
         self.contenido.sizeToFit()
         self.contenido.layoutIfNeeded()
         self.scroll.contentSize = CGSizeMake(self.view.frame.width,self.imagen.frame.height+40 + self.contenido.bounds.height)
-
         self.scroll.addSubview(self.contenido)
     }
 
